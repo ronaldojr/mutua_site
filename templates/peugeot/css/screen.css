@@ -1,0 +1,1053 @@
+@font-face {font-family:'PeugeotLight';src:url('../fonts/peugeot_light-webfont.eot');src:local('?'),url('../fonts/peugeot_light-webfont.woff') format('woff'),url('../fonts/peugeot_light-webfont.ttf') format('truetype'),url('../fonts/peugeot_light-webfont.svg') format('svg');}
+@font-face {font-family:'PeugeotNormal';src:url('../fonts/peugeot_normal-webfont.eot');src:local('?'),url('../fonts/peugeot_normal-webfont.woff') format('woff'),url('../fonts/peugeot_normal-webfont.ttf') format('truetype'),url('../fonts/peugeot_normal-webfont.svg') format('svg');}
+@font-face {font-family:'PeugeotBoldItalic';src:url('../fonts/peugeot_bold_italic-webfont.eot');src:local('?'),url('../fonts/peugeot_bold_italic-webfont.woff') format('woff'),url('../fonts/peugeot_bold_italic-webfont.ttf') format('truetype'),url('../fonts/peugeot_bold_italic-webfont.svg') format('svg');}
+@font-face {font-family:'PeugeotBold';src:url('../fonts/peugeot_bold-webfont.eot');src:local('?'),url('../fonts/peugeot_bold-webfont.woff') format('woff'),url('../fonts/peugeot_bold-webfont.ttf') format('truetype'),url('../fonts/peugeot_bold-webfont.svg') format('svg');}
+@font-face {font-family:'PeugeotVertical';src:url('../fonts/peugeot_vertical-webfont.eot');src:local('?'),url('../fonts/peugeot_vertical-webfont.woff') format('woff'),url('../fonts/peugeot_vertical-webfont.ttf') format('truetype'),url('../fonts/peugeot_vertical-webfont.svg') format('svg');}
+@font-face {font-family:'PeugeotItalic';src:url('../fonts/peugeot_italic-webfont.eot');src:local('?'),url('../fonts/peugeot_italic-webfont.woff') format('woff'),url('../fonts/peugeot_italic-webfont.ttf') format('truetype'),url('../fonts/peugeot_italic-webfont.svg') format('svg');}
+@font-face {font-family:'PeugeotStyle';src:local('?'),url('../fonts/Peugeot_Style_v2.ttf') format('truetype');}
+
+/* CSS Document */
+* {margin:0; font-family:'PeugeotNormal';font-weight:normal;}
+strong{font-weight: bold;font-family: arial;}
+body, li, ol, p, form, div, h1, h2, h3, h4, h5, h6, label, a, table {margin:0; padding:0;}
+html, body { height:100%; width:100%}
+body{ background:#000000; background-image: url('../../../templates/peugeot/images/loading.gif'); background-position: 50% 50%; background-repeat: no-repeat;}
+body > h1{display:none}
+ul{ list-style-type:none;padding:0;}
+a { text-decoration:none; color:#FFFFFF;}
+img{ border:0;}
+.clear { clear:both}
+.upper{ text-transform: uppercase;}
+.homePageNav .title {position:relative;text-align:center;font-family:'PeugeotLight'; font-size:36px; letter-spacing:5px; color:#ffffff;text-transform: uppercase;cursor:pointer;margin-bottom: 10px;text-shadow: 0px 0px 45px #3E3E3E;}
+.homePageNav .title span {font-family:'PeugeotBold'; display:block; font-size:56px;text-transform: uppercase;cursor:pointer;}
+.homePageNav .subTitle {position:relative; text-align:center;color:#fff;}
+.homePageNav .homepageTitle .content {display:none; margin-top:200px;}
+.homePageNav .homepageTitle .content .close {color:#fff;cursor:pointer;}
+.homePageNav .overlay {height:100%;width:100%;background:#000;position:absolute;left:0;top:100%;opacity:.5;}
+.homePageNav .homepageTitle {}
+.homepageTitle .traducFr{font-family:'PeugeotItalic'; font-size:13px;color:#ffffff;letter-spacing: normal;text-transform: none;margin:10px 0;}
+.blcF{float:left;}
+.blcFB{float:left; padding-right:20px;}
+.blcFR{ margin-left:62px;float:left;}
+a:focus, a:visited, a:link{outline:none;text-decoration:none; color:#FFFFFF;}
+#mapHover img{outline: none;}
+.typoBold{font-family:'PeugeotBold';}
+embed,object {outline: 0;overflow: hidden}
+
+#opacityBox{background:url('../../../templates/peugeot/images/bgd-opacite-menu.png') 0 0 repeat transparent;position:fixed;top:0;left:0;z-index:6;}
+#opacityTelecommande{background:url('../../../templates/peugeot/images/bgd-opacite-guide.png') 0 0 repeat transparent;position:fixed;top:0;left:0;z-index:102;}
+
+img[align="left"], img.pull-left { float: left; margin:0 20px 10px 0;}
+img[align="right"], img.pull-right { float: right; margin:0 0 10px 20px;}
+
+.sloganlogo{float:left;}
+.sloganlogo.texte{padding:30px 0 0 30px;}
+#breadcrumb {top:101%;/*left:-64px;*/height:24px;overflow:hidden;position:absolute;z-index: 9;
+width: 100%;clear: both;}
+/*.cookiebanner #breadcrumb{top: 25px;}*/
+#breadcrumb .lienNavHeader{width: 710px;overflow:hidden;height:17px;;padding:1px 0 5px 45px;position: absolute;top:0px;background:url('../../../templates/peugeot/images/ariane-bg.png') 0 0 no-repeat transparent;}
+#breadcrumb .lienNavHeader .breadcrumbs a:hover{text-decoration: underline;}
+#breadcrumb ul{overflow:hidden;width:200px;float:left;}
+#breadcrumb ul li {float:left;padding:4px 5px 0 0;}
+#breadcrumb ul li,#breadcrumb ul li a{color:#ffffff;font-size:10px;text-transform:uppercase;}
+#breadcrumb ul li a:hover{text-decoration:underline;}
+#breadcrumb a{color:#ffffff;font-size:10px;text-transform:uppercase;}
+#breadcrumb .retour {width:175px;height:24px;text-align:right;float:right;background:url('../../../templates/peugeot/images/bgd-breadcrumb-retour.png') 0 0 no-repeat transparent;}
+#globalProduits .slideNav li a{text-transform:uppercase !important ;font-size:14px;}
+#breadcrumb .retour{width:175px;height:24px;text-align:right;float:right;background:url('../../../templates/peugeot/images/bgd-breadcrumb-retour.png') 0 0 no-repeat transparent;}
+#breadcrumb .retour a{color:#d5d5d7;padding:0 20px 0 10px;background:url('../../../templates/peugeot/images/arrows.png') 0 -2549px no-repeat transparent;}
+
+
+.breadcrumbs span {color:#ffffff;font-size:10px;text-transform:uppercase;}
+
+/*Emotion Guide*/
+
+#emotionGuide{position:fixed;top:91px;right:20px;z-index:10;}
+#emotionGuide.telecommandeBig{background:url('../../../images/produits/bgd-telecommande-on-v3.png') 0 0 no-repeat transparent;}
+.guideOff.telecommandeLittle{display:block;background:url('../../../templates/peugeot/images/bgd-forme-goBy.png') 0 0 no-repeat transparent;overflow:hidden}
+#emotionGuide .guideOff p{padding:13px 0 0 17px;float:left;;width:85px;height:60px;background:url('../../../templates/peugeot/images/arrows.png') 49px -2002px no-repeat transparent;font-style:normal;}
+#emotionGuide .guideOff a{display:block;width:70px;height:40px;font-family:'PeugeotNormal'; font-size:10px;text-transform:uppercase;text-align: center}
+#emotionGuide .guideOff a span{display:block;font-family:'PeugeotNormal'; font-size:10px;font-weight:bold;letter-spacing:1px;}
+.guideOn .close{background: url("../../../templates/peugeot/images/bgd-sprite-picto.png") no-repeat scroll right -124px transparent;cursor: pointer; display: block;width: 30px;height:30px; position: fixed;right: 20px;top: 20px; }
+
+.guideOn{position:fixed;top:0;left:0;z-index:110;padding:0;display:block;width:465px;height: 280px}
+.guideOn p{min-height:64px;color:#ffffff;font-family:'PeugeotNormal'; font-size:45px;text-transform:uppercase;text-align: center;}
+.guideOn p span{display:block;color:#ffffff;font-family:'PeugeotBold'; font-size:45px;letter-spacing:9px;}
+.guideOn p.description{min-height:16px;color:#ffffff;font-family:'PeugeotItalic'; font-size:18px;text-align:center;text-transform:none;padding:12px 0 20px 0;}
+.guideOn ul{overflow:hidden;display:block;margin:0;padding: 0 0 0 45px;}
+.guideOn ul li{float:left;display: block;width:92px;height:100px;}
+
+
+.guideOn ul .lienListen{background:url("../../../images/produits/ills-nav-produits.png") 18px 0 no-repeat transparent;}
+.guideOn ul .lienTest{background:url("../../../images/produits/ills-nav-produits.png") 18px -301px no-repeat transparent;}
+.guideOn ul .lienExplore{background:url("../../../images/produits/ills-nav-produits.png") 18px -597px no-repeat transparent;}
+.guideOn ul .lienLook{background:url("../../../images/produits/ills-nav-produits.png") 18px -900px no-repeat transparent;}
+.guideOn ul .grey.lienListen{background:url("../../../images/produits/ills-nav-produits.png") 16px -2844px no-repeat transparent;}
+.guideOn ul .grey.lienTest{background:url("../../../images/produits/ills-nav-produits.png") 18px -3000px no-repeat transparent;}
+.guideOn ul .grey.lienExplore{background:url("../../../images/produits/ills-nav-produits.png") 18px -3156px no-repeat transparent;}
+.guideOn ul .grey.lienLook{background:url("../../../images/produits/ills-nav-produits.png") 18px -3320px no-repeat transparent;}
+.guideOn ul .grey a{ opacity:0.5;}
+.guideOn ul  a:hover{color:#ffffff;}
+
+.guideOn ul .lienListen a,
+.guideOn ul .lienTest a,
+.guideOn ul .lienTest a,
+.guideOn ul .lienExplore a,
+.guideOn ul .lienLook a{color:#ffffff;display: block;padding:50px 0 0 0;text-align: center;text-transform: uppercase;font-size: 12px;font-family: 'PeugeotNormal'}
+
+
+/* INFOBULLE LAYER EMOTION GUIDE */
+ .guideOn .infobulleProduits{position: relative;}
+ .guideOn .infobulleProduits ul li{overflow:hidden;display:block;width:auto;height:auto;margin:0;}
+ .infobulleProduits li.big{width:140px;background:#ffffff;border: 1px solid #b1b1b1;border-radius:4px;box-shadow:0 0 1px #b1b1b1;color:#525253;display: inline;padding: 3px 5px;position: absolute;top:-20px;white-space: nowrap;text-align:center;font-size:10px;}
+.infobulleProduits li.big.Listen{left:28px;}
+.infobulleProduits li.big.Test{left:124px;}
+.infobulleProduits li.big.Explore{right:115px;}
+.infobulleProduits li.big.Look{right:27px;}
+
+
+/**Header**/
+#header{height: auto;background-color:rgba(0,0,0,.5);width:100%; min-width:850px;position: fixed; top:0; left: 0; z-index:99;border-bottom: 1px solid rgba(255,255,255,.5);}
+
+.cookiebanner #header{height: auto;}
+.cookiebanner #header .globalMenu{top: 107px;}
+@media screen and (max-width: 1643px){
+ .cookiebanner #header{height: auto;}
+   .cookiebanner #header .globalMenu {
+top: 119px;
+}
+}
+#header .logo{ float:left; padding:0 0 0 50px}
+#header .logo img:first-child{ padding-top: 10px;}
+#header .logo p{color:#ffffff;text-transform:uppercase;font-size:13px;font-family:'PeugeotBold';position:absolute;top:26px;left:206px;font-style:normal;}
+#header .headerContRight{ float:right; /*display:none;*/}
+#header .headerContRight > li {float:left;height: 100%;padding:0;border-left: 1px solid rgba(255,255,255,.5);font-size:14px;}
+#header .headerContRight > li.first{padding:0; width: 104px;  }
+#header .headerContRight .hovered{ cursor:pointer; background-color: #fff;}
+
+#header .headerContRight .search{text-transform:uppercase; text-align: center;width: 166px;}
+#header .headerContRight .search > a{font-size:13px;display:inline-block;line-height:68px; padding: 2px 0 0 25px;background:url("../images/ico-recherche.png") no-repeat left center;}
+#header .headerContRight .search:hover{background-color:#FFFFFF;}
+#header .headerContRight .search:hover a{background-image:url("../images/ico-recherche-active.png");color:#5b5b5b;}
+#header .headerContRight .search.hovered {background-color: transparent;}
+#header .headerContRight #rechercherDansSite{display:none;}
+
+#header .headerContRight .mappemonde{text-transform:uppercase; text-align: center;width: 262px;}
+#header .headerContRight .mappemonde > a{font-size:13px;display:inline-block;line-height:68px; padding-top:2px;}
+#header .headerContRight .mappemonde > a span{position:relative;top:5px;display:inline-block;width:48px;height:20px;background:url("../images/bgd-sprite-picto.png") no-repeat -166px -6px;}
+#header .headerContRight .mappemonde.fixHover {background-color: #fff;}
+#header .headerContRight .mappemonde.hovered > a, #header .headerContRight .mappemonde.fixHover > a{color:#5b5b5b;}
+#header .headerContRight .mappemonde.hovered a span, #header .headerContRight .mappemonde.fixHover a span{background-position:-1px -6px;}
+
+#header .headerContRight .first{text-transform:uppercase; text-align: center;}
+#header .headerContRight .first > a{display:inline-block;line-height:68px; padding: 2px 0 0 25px;background:url("../images/icon-menu.png") no-repeat left center;}
+#header .headerContRight .first.hovered, #header .headerContRight .first:hover {background-color: #fff;}
+#header .headerContRight .first.hovered .menu a, .headerContRight .first:hover .menu a{margin: 0; display:block;}
+#header .headerContRight .first.hovered > a, #header .headerContRight .first:hover > a{background-image:url("../images/icon-menu-active.png");color:#5b5b5b;}
+
+#header .globalMenu {width:100%;position:absolute; top:70px; left:0;z-index:100;cursor:auto;display:none;}
+
+#header	.globalMenu .containerMenu{background-color:#FFFFFF; height: 86px;}
+#header	.globalMenu .containerMenu .none{display:none;}
+#header	.globalMenu .containerMenu .contentMenu{width: 1000px;margin: 0 auto;padding-top:18px;}
+#header .globalMenu .containerMenu .subMenu { float: left; height: 50px; padding-right:27px;position:relative;}
+#header .globalMenu .containerMenu .subMenu img {position: absolute;top: 17px;left: 135px; float: left;}
+#header .globalMenu .containerMenu .subMenu.emotion img {position: absolute;top: 17px;left: 145px; float: left;}
+#header .globalMenu .containerMenu .subMenu .wrap-inner img {left: 92px;}
+#header .globalMenu .containerMenu .subMenu.active {padding-right:0;}
+#header .globalMenu .containerMenu .subMenu.active img{ display: none;}
+#header .globalMenu .containerMenu .subMenu:last-child{border-left: 1px solid #d5d5d5;margin-left: 40px;padding-left: 40px;}
+#header .globalMenu .containerMenu .subMenu a { margin: 0; padding: 0; }
+#header .globalMenu .containerMenu .subMenu .btn-open { font-family: PeugeotLight; display: block; float: left; font-size: 14px; color: #5b5b5b; text-align: center; margin:0; padding-top:8px; height:41px;}
+#header .globalMenu .containerMenu .subMenu .btn-open span { font-family: PeugeotBold; display: block; font-size: 20px; }
+#header .globalMenu .containerMenu .subMenu .btn-open span .border {background-color: #5b5b5b; height: 1px; display:block; margin-top: 3px; width: 0px; margin-left: auto; margin-right: auto;}
+#header .globalMenu .containerMenu .subMenu:first-child .btn-open span .border {width: 40px;}
+#header.globalMenu .menu{padding:0 0 18px 0;overflow: hidden;}
+#header #navMenu ul li a.none{display: none;}
+/*#header	.globalMenu .menu li{ padding:0 0px 25px 47px;font-family:'PeugeotLight'; font-size:18px; text-transform:none;background:url(../images/bg-borderMenu.gif) no-repeat;}*/
+
+#header	.globalMenu .menu li a {font-family:'PeugeotLight';font-size:18px;display:block;padding:0;color:#373533;background:url("../images/bgd-sprite-arrow.png") no-repeat 57px 6px;}
+#header	.globalMenu .menu li a:hover{ color:#2CAED6;}
+#header	.globalMenu .menu li.hovered a{ color:#2caed6;}
+
+#header	.globalMenu .close {display:block;width:23px;height:23px;position:absolute;top:20px;right:0px;background:url("../images/bgd-sprite-picto.png") no-repeat -376px -6px transparent;cursor:pointer;background-position: -619px -6px !important;}
+#globalMenu{cursor:default;background-color:#ffffff;}
+#globalMenu #buttonReturn img, #buttonReturn01{cursor:pointer;}
+
+
+/* NAV HEADER DEROULEE */
+#header #navMenu ul{overflow:hidden;float:left; padding: 11px 0 10px 30px;}
+#header #navMenu ul li{width: auto;float:left; border-right: 1px solid #d5d5d5; display:block;margin:0;font-family:'PeugeotLight';text-transform: capitalize;}
+#header #navMenu ul li:last-child{border: none;}
+    #header #navMenu ul .item-210, #header #navMenu ul .item-179{border: none;}
+
+#header #navMenu ul li:last-child a {padding-right: 0;}
+#header #navMenu ul li a{color:#373533;font-size:13px;font-family:'PeugeotNormal';text-transform:none; display: inline-block; text-align: left; padding: 0 13px;}
+#header #navMenu .emotion ul li a{line-height:32px;}
+#header #navMenu ul li a:hover{color:#2caed6;}
+
+/*NAV ESPAGNOL */
+#header #navMenu ul .item-207 a,
+#header #navMenu ul .item-211 a,
+#header #navMenu ul .item-213 a{width:auto}
+
+/*RECHERCHE HEADER*/
+#header  #rechercherDansSite{
+	position:relative;
+	height: 30px;
+	margin: 20px;
+}
+#header  #rechercherDansSite  input[type=text]{
+	/*width: 210px;*/
+	padding: 8px 40px 8px 40px;
+	outline:none;
+	border:1px solid #b6b5b3;
+	background: url('../images/loupe-search-input.png') no-repeat 10px 5px;
+	position:absolute;
+	top:0;
+	right:0;
+	color: #FFFFFF;
+}
+#header  #rechercherDansSite  button{
+	height:18px;
+	border:none;
+	border-left: 1px solid #b6b5b3;
+	color: #FFFFFF;
+	background:none;
+	position:absolute;
+	top:7px;
+	right:0;
+	cursor:pointer;
+	outline:none;
+
+}
+
+/*
+#header .headerContRight #recherche{height:40px;background:#ffffff;padding:0 20px 20px 20px;}
+#header .headerContRight #recherche form#rechercherDansSite {float:right;width:460px;overflow:hidden;}
+#header .headerContRight #recherche #rechercherDansSite ul{width:460px;overflow:hidden;}
+#header .headerContRight #recherche #rechercherDansSite li{float:left;padding:0; position:relative;}
+#header .headerContRight #recherche #rechercherDansSite label{display:inline-block;width:133px;padding:8px 0 0 0;font-family:'PeugeotNormal';font-size:18px;color:#373533;}
+#header .headerContRight #recherche #rechercherDansSite .search{background:none}
+#header .headerContRight #recherche #rechercherDansSite input[type=text]{border:1px solid #8c8c8b; vertical-align:middle;width:240px;padding:8px 10px 6px 10px; outline:none;}
+#header .headerContRight #recherche #rechercherDansSite button{ padding-top:0;position:absolute;top:5px;right:1px;border:none;background:none;width:39px; height:30px;cursor:pointer; }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+		#header .headerContRight #recherche #rechercherDansSite button{ width:39px;position:absolute;top:5px;right:2px;border:none;background:none; z-index:5;border-left: 1px solid #8c8c8b; height: 18px;}
+}
+*/
+
+/*MAPPEMONDE*/
+
+
+.mapWorld{ margin:0 auto;width:930px;min-width: 930px;overflow:hidden;}
+.mapWorld .blcF{float:none;position: relative;}
+.mapWorld .meaTitle{height: 65px;width: 100%;line-height: 65px;border-bottom: 1px solid #d4d4d4;text-transform: none;text-align: left; margin:0;}
+.mapWorld .meaTitle.noBgd{border: none;}
+.mapWorld .meaTitle a.puce {color: #5b5b5b; font-size: 12px; margin-left: 20px;}
+.mapWorld .meaTitle img {position: relative; top: 3px; border: 1px solid #9C9C9C;}
+.mapWorld .meaText{width:355px; float:left; text-transform: none;text-align: left; padding: 15px 0 0 1px;}
+.mapWorld .meaText span{font-family: 'PeugeotBold';}
+.mapWorld .meaText p{font-size:12px; color:#9c9c9c;width: 234px;margin-top: 15px;}
+.mapWorld .meaText h2{margin: 0; font-size: 18px;}
+.mapWorld .meaText h2 span {display: block;padding-bottom: 4px;}
+.mapWorld h2{font-family:'PeugeotLight';font-size:16px;color:#5b5b5b;text-align: left;margin: 20px 0 0 0;}
+.mapWorld ul:first-child{margin:10px 0 0 0;padding:0;}
+.mapWorld ul{margin:5px 0;padding:0 0 0px 0;}
+#header .mapWorld .listeSites li { float:none; height:auto;padding:0; margin:0;}
+#header .mapWorld .listeSites li:hover a{ background-color:inherit;color:#2caed6;}
+.mapWorld .listeSites a{padding:0 0 0 10px;background:url("../images/arrow-gamme-grey.png") 0 4px no-repeat transparent;}
+.mapWorld li a {font-family:Arial, Helvetica, sans-serif;font-size:12px; color:#777777;}
+#header .mapWorld .reseaux{width:330px;height:40px;padding:10px 0 0 0;}
+.mapWorld .reseaux li a{display:inline-block;width:30px;}
+.blcF.continent img{float: left; margin-top: 20px;}
+
+/*CONTINENT*/
+.mapWorld .continent .meaText{width:242px;}
+
+/*PAYS*/
+.mapWorld .mapPays .meaText{width:357px;padding-bottom: 20px;}
+.mapWorld .mapPays .meaText p{width:310px;}
+.mapWorld .mapPays .searchAuto {width:380px;float:left;margin: 0 0 20px 0;}
+.mapWorld .mapPays .searchAuto ul{/*width:379px;/*float:left;*/;/*position: absolute;*/}
+.mapWorld .mapPays .searchAuto ul li{width: 188px;text-align: left;}
+.mapWorld .mapPays .discover {width:168px;float:left;border-left: 1px solid #d4d4d4;margin-top: 20px;padding-left: 15px;}
+.mapWorld .mapPays .discover h2 {margin-top: 0;}
+.mapWorld .mapPays .discover ul{width:158px;float:left;}
+
+/* liste et effet hover */
+#header .mapWorld .reseaux li{ height:40px;background:url("../images/bgd-sprite-picto.png") no-repeat  11px -548px;padding: 0 10px 0 10px;line-height: 10px;display: inline-block;}
+#header .mapWorld .reseaux .facebook:hover{background:url("../images/bgd-sprite-picto.png") no-repeat  11px -774px;}
+#header .mapWorld .reseaux li.last{padding:0;}
+#header .mapWorld .reseaux .twitter{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -590px;}
+#header .mapWorld .reseaux .twitter:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -816px;}
+#header .mapWorld .reseaux .youtube{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -635px;}
+#header .mapWorld .reseaux .youtube:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -861px;}
+#header .mapWorld .reseaux .google{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -685px;}
+#header .mapWorld .reseaux .google:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -911px;}
+#header .mapWorld .reseaux .lastBoard{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -729px;}
+#header .mapWorld .reseaux .lastBoard:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  11px -964px;}
+#header .mapWorld .reseaux .instagram{background: url('../images/bgd-sprite-picto.png') no-repeat 11px -1818px;}
+#header .mapWorld .reseaux .instagram:hover{background: url('../images/bgd-sprite-picto.png') no-repeat 11px -1964px;}
+
+.mapWorld #map {background-image: url('../images/map.png');background-repeat: no-repeat;width: 500px;height: 240px;margin: 15px 72px 15px 0;padding: 0;float: right;}
+.mapWorld #mapHover {background-repeat: no-repeat;width: 500px;height: 240px;margin: 0;padding: 0;}
+.mapWorld #mapHover:hover {cursor:pointer;}
+.mapWorld .carrousel{padding:0 20px 0 0;}
+.mapWorld .carrousel img{margin:141px 0 0 0;}
+.mapWorld .pays{width:432px;float:right;margin: 20px 0;}
+.mapWorld .pays ul{width:144px;margin:0; padding:0;float:left;}
+.mapWorld .pays ul li{float:none;}
+
+#header .mapWorld .pays li{padding:0 10px 5px 0;height:auto;overflow:hidden;text-align:left;}
+#header .mapWorld .pays li:hover a {color:#2caed6;}
+#header .mapWorld .pays li a{float:left;width:100px;text-transform:capitalize;}
+#header .mapWorld .pays img{display:inline-block;margin:0 13px 0 0;border:1px solid #a0a2a3;vertical-align:top;float:left;font-size:10px;}
+#header .mapWorld .consulter{width:572px;padding:0;float:right;text-transform: none;}
+#header .mapWorld .consulter ul.address{margin:5px 0 0 0;padding:0 0 15px 15px;}
+#header .mapWorld .consulter ul.address li{border-bottom:none;list-style-type:disc; float:none;}
+
+#header .mapWorld .consulter li.hideShow{width: 180px;padding-left: 10px;background:url("../images/sprite-arrow.png") 115px 9px no-repeat;}
+	#header .mapWorld .consulter li.hideShow:hover{background-position: 115px -399px;}
+	#header .mapWorld .consulter li.hideUp{background-position: 115px -195px;}
+		#header .mapWorld .consulter li.hideUp:hover{background-position: 115px -603px;}
+		#header .mapWorld .consulter li.hideShow > a,#header .mapWorld .consulter li.hideShow > a:hover{display: block;background: none;padding: 0;}
+		/*#header .mapWorld .consulter li.hideShow a{display:inline-block;width:100%;background: none;padding: 0;}
+			#header .mapWorld .consulter li.hideShow a:hover{background: none;}*/
+
+#header .mapWorld .consulter li.last,
+#header .mapWorld .consulter li.last li{border-bottom:none;}
+/*#header .mapWorld .consulter li.last li{padding:0 0 10px 0;}*/
+#header .mapWorld .consulter .address .mea{display:block;text-transform:uppercase;}
+#header .mapWorld .consulter .address .puce{display:block;margin:5px 0 0 0;}
+#header .mapWorld .consulter a{font-family: Arial, Helvetica, sans-serif;font-size:12px;color:#5b5b5b;}
+#header .mapWorld .consulter li{ float:left; height:auto;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#42403f;padding:3px 0;}
+
+#header .mapWorld .consulter #import{width: 180px;padding-left: 10px;background:url("../images/sprite-arrow.png") 135px 9px no-repeat;}
+	#header .mapWorld .consulter #import:hover{background-position: 135px -399px;}
+	#header .mapWorld .consulter #import.open{background-position: 135px -195px;}
+		#header .mapWorld .consulter #import.open:hover{background-position: 135px -603px;}
+		#header .mapWorld .consulter #import > a{display: block;}
+			#header .mapWorld .consulter #import > a:hover{color: #2CAED6;background: none;}
+
+#header .mapWorld .consulter #import>ul{ padding: 0; margin: 0; display: none;}
+#header .mapWorld .consulter #import>ul>li{ padding:0; margin:5px 0 5px 25px; border-bottom: none; font-size: 12px; list-style-type: disc; background: none;}
+#header .mapWorld .consulter #import>ul>li>a:hover { color: #777777;background:none;}
+#header .mapWorld .consulter #import>ul>li>ul{ margin:0; padding: 0;display: inline-block;vertical-align:top;/* fix ie */}
+#header .mapWorld .consulter #import>ul>li>ul>li{ margin:0 0 0 0px; list-style: none; padding: 0; border-bottom: none;}
+
+#header .mapWorld .consulter #import>ul>li>ul>li>a{display: block;padding: 0 10px 0 10px; font-size: 10px;background: url("../images/arrow-gamme-grey.png") 100px 2px no-repeat transparent;margin: 5px 0 0 0;}
+#header .mapWorld .consulter #import>ul>li>ul>li>a:hover{ /*font-size: 10px;*/ color: #2caed6;background-position: 100px -10px;}
+#header .mapWorld .consulter a:hover, .map .consulter a.actif{font-size:12px;color:#2caed6;background: url("../images/arrow-gamme-grey.png") 0 -9px no-repeat transparent;}
+#header .mapWorld .puce{padding:0 0 0 10px; background:url("../images/arrow-gamme-grey.png") 0 3px no-repeat transparent;}
+#header .mapWorld .puce.noBgd{background: none;margin: 0;padding: 0;font-size: 13px;}
+#header .mapWorld .puce.noBgd span{background:url("../images/arrow-actu-homepage.png") center no-repeat transparent;padding: 11px;transform:rotate(90deg);-moz-transform:rotate(90deg); display: inline-block;}
+
+#header .mapWorld .puce:hover{background-position: 0 -9px;color:#2caed6;}
+#header .mapWorld .puce.noBgd:hover{background-position:right 4px;}
+#header .mapWorld .consulter:hover #header .mapWorld .puce{ }
+/**Diaporama**/
+.homepageNavLink{padding-top:0;overflow:hidden; width:426px; margin:0 auto;}
+.homepageNavLink li{ padding:12px 0 12px 0; text-transform:uppercase; background: url('../images/arrow-menu-li-homepage.png') no-repeat right center; font-size:24px; display:block;zoom:1;text-align: left;border-top: 1px solid #515052;}
+.homepageNavLink li:first-child{border-top: none;}
+.homepageNavLink li h2{display:inline-block}
+.homepageNavLink li h2 a{font-family:'PeugeotNormal'; color:#FFFFFF; font-size:12px;font-weight: normal}
+.homepageNavLink li a{font-family:'PeugeotLight';}
+.homepageNavLink li a:hover{color:#2caed6;}
+.homepageNavLink li:hover {background-image: url('../images/arrow-menu-li-homepage-hover.png');}
+.homepageNavLink .first{/*padding:5px 0 5px 0px;background:none;*/}
+.descriptionHome{width: 80%;margin: 60px auto 0 auto;}
+.descriptionHome h2,.descriptionHome p{font-family:'PeugeotItalic'; color:#FFFFFF; font-size:13px;font-weight:normal;}
+
+.homepageTitle .close{
+	height:40px;
+	width:40px;
+	background: url('../images/btn-close-layer-homepage.png') no-repeat 0 0 ;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.homePageNav  a.open {
+	border: 1px solid #FFFFFF;
+	padding: 14px 22px;
+	background: rgba(0,0,0,0.5);
+        font-size: 12px;
+        font-family: 'peugeotLight';
+        text-transform: uppercase;
+}
+.homePageNav  a.open:hover {
+	background: #FFFFFF;
+	color:#5b5b5b;
+}
+
+.homepageTitle p {
+    color: #FFFFFF;
+    width:460px;
+    font-size: 13px;
+    margin: 36px auto 40px auto;
+    padding-top: 36px;
+    font-family: 'peugeotLight';
+    line-height: 17px;
+}
+
+.homePageNav .subTitle span, .homePageNav .subTitle h1{
+    font-family: 'peugeotItalic';
+    font-size: 13px
+}
+/**Footer**/
+
+#globalFooter{ min-width:1024px;width:100%;position:fixed;z-index:100;bottom:0;}
+/*
+#globalFooter{ overflow:hidden;width:100%; min-width:1024px; position:fixed;z-index:9999;bottom:0;}
+*/
+
+
+#footer .blcActualite{width:197px;height:39px;margin:0 auto;background:url("../images/bgd-bloc-actu.png") 0 0 no-repeat transparent;}
+#footer .blcActualite p{display:block;width:105px;margin:0 auto;padding:10px 0;text-align:center;background:url("../images/bgd-sprite-arrow.png") no-repeat 0px 50px;}
+#footer .blcActualite a{text-transform:uppercase;font-family:'PeugeotNormal';font-size:16px;color:#777777;text-decoration:none;}
+
+#footer .contentFooter{width:100%;min-height:34px;background: url("../images/bg-footer.png") 0 0 repeat-x;vertical-align:middle;background-color: rgba(0,0,0,.5);}
+#footer .contentFooter ul{margin-top:6px;}
+#footer .contentFooter ul li{list-style-type:none;float:left;}
+#footer .contentFooter ul.blcFR li{padding:0 0 0 14px;}
+#footer .contentFooter ul li a{font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#b3b3b3;text-decoration:none;}
+#footer .contentFooter ul li a:hover{color:#ffffff;}
+#footer .contentFooter ul.menu_blcF{padding:0 0 5px 13px;float:left;}
+#footer .contentFooter ul.menu_blcF li{float:left;}
+#footer .contentFooter ul.menu_blcF > li{padding:0 9px 0 0;}
+#footer .contentFooter ul.menu_blcF .item-137, #footer .contentFooter ul.menu_blcF .item-184, #footer .contentFooter ul.menu_blcF .item-219{width: 116px}
+#footer .contentFooter ul.menu_blcF .item-138, #footer .contentFooter ul.menu_blcF .item-193, #footer .contentFooter ul.menu_blcF .item-228{width: 46px}
+#footer .contentFooter ul.menu_blcF .item-228{ width: 46px;}
+#footer .contentFooter ul.menu_blcF .item-235, #footer .contentFooter ul.menu_blcF .item-237, #footer .contentFooter ul.menu_blcF .item-240{width: 85px}
+#footer .contentFooter ul.menu_blcF .item-140, #footer .contentFooter ul.menu_blcF .item-197{width: 115px}
+#footer .contentFooter ul.menu_blcF .item-232{width: 66px}
+#footer .contentFooter ul.menu_blcF li ul{display:none;}
+#footer .contentFooter ul.menu_blcF .deeper > ul{padding:0 0 10px 0;width:400px;overflow:hidden}
+#footer .contentFooter ul.menu_blcF .deeper > ul{padding:0 0 10px 0;}
+#footer .contentFooter ul.menu_blcF li:first-child ul li{float:left;width:150px;padding:0 10px 0 0;}
+#footer .contentFooter ul.menu_blcF li ul li{float:none;}
+#footer .contentFooter  .menuRight{float:right;}
+#footer .contentFooter ul.blcFR{margin-right:15px;margin-left:0;float:left;}
+#footer .contentFooter ul.blcFR img{vertical-align:middle;}
+#footer .contentFooter .blcFR .separator,
+#footer .contentFooter .blcFR .separator:hover{background:url("../images/illus-separator.png") right 10px no-repeat transparent;padding:5px 8px 0 16px;}
+#footer .contentFooter .blcFR .separator a{color:#ffffff;}
+#footer .contentFooter .last{padding:6px 0 0 16px;}
+#footer .contentFooter .last a{color:#aeadad;}
+#footer .contentFooter ul li.active a.puce,
+#footer .contentFooter ul li.active:hover a.puce{background:url("../images/bgd-sprite-arrow-w.png") right -544px no-repeat transparent;}
+#footer .contentFooter ul li a.puce{background:url("../images/bgd-sprite-arrow-w.png") right -644px no-repeat transparent;padding:0 12px 0 0;}
+#footer .contentFooter ul li:hover a.puce{background:url("../images/bgd-sprite-arrow-w.png") right 6px no-repeat transparent;}
+#footer .contentFooter ul li.active a{color:#fefefe;}
+#footer .contentFooter ul li.active ul li a{color:#B3B3B3;}
+#footer .contentFooter ul li.active ul li a:hover{color:#fefefe;}
+
+/*bgd pictos*/
+#footer .contentFooter .blcFR li a{position: relative;display:block;width:18px;height:18px;background:url("../images/sprite-picto.png") 0 -247px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li a{background:url("../images/sprite-picto.png") 0 -297px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li a{background:url("../images/sprite-picto.png") 0 -347px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li a{background:url("../images/sprite-picto.png") 0 -397px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li+li a{background:url("../images/sprite-picto.png") 0 -447px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li+li+li a{background:url("../images/sprite-picto.png") 0 -910px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li+li+li+li a{background:url("../images/sprite-picto.png") 0 -1169px no-repeat transparent; }
+/*hover*/
+#footer .contentFooter .blcFR li a:hover{background:url("../images/sprite-picto.png") 0 3px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li a:hover{background:url("../images/sprite-picto.png") 0 -47px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li a:hover{background:url("../images/sprite-picto.png") 0 -97px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li a:hover{background:url("../images/sprite-picto.png") 0 -147px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li+li a:hover{background:url("../images/sprite-picto.png") 0 -197px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li+li+li a:hover{background:url("../images/sprite-picto.png") 0 -964px no-repeat transparent; }
+#footer .contentFooter .blcFR li+li+li+li+li+li+li a:hover{background:url("../images/sprite-picto.png") 0 -1169px no-repeat transparent; }
+#footer .contentFooter .blcFR .separator a,
+#footer .contentFooter .blcFR .last,
+#footer .contentFooter .blcFR .last a,
+#footer .contentFooter .blcFR .separator a:hover,
+#footer .contentFooter .blcFR .last:hover,
+#footer .contentFooter .blcFR .last a:hover{background:none;font-size:12px;}
+
+#footer .subContFooter.liste1{padding:0 0 15px 25px;}
+#footer .subContFooter.liste2{padding:0 0 15px 140px;}
+#footer .subContFooter.liste3{padding:0 0 15px 228px;}
+
+#footer .subContFooter ul{float:left;padding:0;}
+#footer .subContFooter ul+ul{padding:0 0 0 60px;}
+#footer .subContFooter ul li a{font-family:Arial, Helvetica, sans-serif;color:#b3b3b3;font-size:11px;}
+#footer .subContFooter ul li.active a{font-family:Arial, Helvetica, sans-serif;color:#fefefe;font-size:11px;}
+#footer .subContFooter ul li a:hover{color:#fefefe;}
+#footer .subContFooter{overflow:hidden;width:100%;background:url("../images/bg-footer-content.png") 0 0 repeat;vertical-align:middle;}
+/*ENCART LANGUES*/
+#footer .contentFooter .mod-languages{float:right;margin:0 2px 0 0;}
+#footer .contentFooter .mod-languages .lang-active a{color:#ffffff;}
+#footer .contentFooter .mod-languages ul li{padding:1px 10px 0 0;}
+#footer .contentFooter .mod-languages ul li:first-child{background:url('../images/illus-separator.png') right 7px no-repeat transparent;}
+#footer .contentFooter .mod-languages ul li + li{background:url('../images/illus-separator.png') right 7px no-repeat transparent;}
+.mod-languages ul li + li + li{background:none!important;}
+
+/* onglet actualit� */
+#actualites .center{width:1024px; overflow: hidden; margin:30px auto;}
+#actualites .center p.title {text-transform: uppercase;margin: 0px 0 10px 11px;font-size: 18px;}
+.moduleActu{width:100%;bottom:0px;overflow: hidden;position:relative;}
+#actualites{width:100%;background-color:#ffffff;overflow:hidden;padding:0;display:none;}
+
+#actualites .contentActu ul li{float:left;padding:0 5px 0 0;}
+#actualites .carrouselcontent p.descriptionTittle{font-family:'PeugeotLight';font-size:30px;color:#373533;margin:0px 0 5px 0;}
+.contentActu .illus, .contentActu div{float:left;width:321px; height:158px;}
+.contentActu .illus{margin:0 40px 0 0;border:1px solid #e7e7e7;}
+.contentActu p.descriptionTittle a{font-family:'PeugeotLight';font-size:30px;color:#373533;margin:10px 0 5px 0;}
+.contentActu p.descriptionTittle a:hover{font-family:'PeugeotLight';font-size:30px;color:#2CAED6;margin:10px 0 5px 0;}
+
+.contentActu .description a:hover{color:#2CAED6}
+.contentActu p{font-family:'PeugeotLight';font-size:14px;color:#777777;}
+.contentActu p.resumeActu{font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:18px;color:#777777;margin:0 0 10px 0;}
+.contentActu .link{display:inline-block;height:21px;background:url("../../../templates/peugeot/images/bgd-bouton-grey.jpg") 0 0 repeat-x transparent;margin:0;padding:5px 11px 0 15px;border-radius:19px;box-shadow: 1px 2px 3px #969393;}
+.contentActu .link span{background:url("../../../templates/peugeot/images/arrow-actu.png") right 2px no-repeat transparent;font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#777777;text-align:left;text-transform:uppercase;padding:1px 15px 0 0;}
+.contentActu div p{margin:10px 0 0 0;}
+.contentActu span{float:left;}
+
+/* Content Mise en avant*/
+#actualites .contentMea{
+    width:410px;
+    margin:0 28px 0 32px;
+    float:left;
+}
+@media only screen and (max-width : 1024px) {
+	#actualites .contentMea{margin: 0 20px;}
+}
+
+    #actualites .contentMea .mea {overflow: hidden; margin: 10px 0;}
+        #actualites .contentMea .mea:hover h3,#actualites .contentMea .mea:hover p {color:#2caed6;}
+        #actualites .contentMea h3{width: 250px;margin: 15px 0 5px 0; float: left; font-family: peugeotNormal; font-size: 19px; color:#3b3a48; text-transform: uppercase;}
+        #actualites .contentMea p{/*float: left;*/ font-family: peugeotItalic; font-size: 16px; color:#666666;}
+
+        #actualites .contentMea .picture{height:95px; width:127px;float: left;margin-right: 22px;}
+            #actualites .contentMea .meaWall {margin: 0 0 10px 0;}
+            #actualites .contentMea .meaWall .picture{background: url('../../../images/peugeotnews/bg-mea-social-wall.jpg') no-repeat 0px 0px;  background-size: auto 100%;background-position: center;}
+            #actualites .contentMea .meaBlogo .picture{background: url('../../../images/peugeotnews/bg-mea-blogo.jpg') no-repeat 0px 0px;  background-size: auto 100%;background-position: center;}
+            #actualites .contentMea .meaFandays .picture{background: url('../../../images/peugeotnews/bg-mea-fan-days.jpg') no-repeat 0px 0px;  background-size: auto 100%;background-position: center;}
+
+    #actualites .contentShares{width:233px; float:left;}
+        #actualites .contentShares .lineSeparator{border-bottom: 1px solid #b2b2b2;padding-bottom: 15px;margin-bottom: 15px;}
+            #actualites .contentShares .newsletter p{margin: 0 0 20px 0;}
+            #actualites .contentShares .newsletter input[type=submit]{right:11px;}
+
+        #actualites .contentShares .shares{overflow: hidden; border-bottom: 1px solid #b2b2b2;padding-bottom: 15px;}
+            #actualites .contentShares .shares p{margin-bottom: 20px; color:#5b5b5b;}
+            #actualites .contentShares .shares li {float:left;}
+
+                #actualites .contentShares .shares li a{ font-size: 0; width:26px; height:24px; display:block; margin: 0 5px; background: url('../../../images/peugeotnews/sprite-layer-share-bg.png') no-repeat 0px 0px;}
+                #actualites .contentShares .shares li a.facebook{margin: 0 5px 0 0;}
+					#actualites .contentShares .shares li a:hover{background-position: 0px -49px}
+                #actualites .contentShares .shares li a.twitter{background-position: -80px 0px;}
+					#actualites .contentShares .shares li a.twitter:hover{background-position: -80px -49px}
+                #actualites .contentShares .shares li a.youtube{background-position: -165px 0px;}
+					#actualites .contentShares .shares li a.youtube:hover{background-position: -165px -49px}
+                #actualites .contentShares .shares li a.google{background-position: -255px 0px;}
+					#actualites .contentShares .shares li a.google:hover{background-position: -255px -49px}
+                #actualites .contentShares .shares li a.pinterest{background-position: -341px 0px;}
+					#actualites .contentShares .shares li a.pinterest:hover{background-position: -341px -49px}
+                #actualites .contentShares .shares li a.instagram{background-position: -438px 0px;}
+					#actualites .contentShares .shares li a.instagram:hover{background-position: -438px -49px}
+                #actualites .contentShares .shares li a.thumblr{background-position: -525px 0px; margin: 0 0 0 5px;}
+					#actualites .contentShares .shares li a.thumblr:hover{background-position:-525px -49px}
+
+       #actualites .contentShares a.btnLink{font-size:12px; font-family: peugeotLight;text-align: center; display: block; height:40px; line-height: 40px; padding: 0 20px; text-transform: uppercase; background: url('../../../images/peugeotnews/bg-btn-link.jpg') 0px 0px;}
+            #actualites .contentShares a.btnLink span{font-family: peugeotBold;}
+       #actualites .contentShares a.btnLink:hover{background-position: 0 -40px;}
+       #actualites .contentShares a.puce {color:#5b5b5b; padding: 0 0 0 10px; font-size:12px; background: url("../images/arrow-gamme-grey.png") 0 2px no-repeat transparent;}
+			#actualites .contentShares a.puce:hover{color:#2caed6;background: url("../images/arrow-gamme-grey.png") 0 -10px no-repeat transparent;}
+/*CARROUSEL*/
+#actualites #contCarrousel{position:relative;width:321px;height:294px;margin:0;float:left;}
+#actualites .contentActu{position:absolute;width:50000px;top:0;left:0;}
+#actualites .carrouselcontent{width:1024px;height:227px;display:block;}
+#globalFooter .moduleActu .carrouselcontent img{border:none;}
+#actualites .carrousel-pagination{ text-align: center;margin:0 auto 15px auto;position: absolute;top: 211px;left: 509px;}
+#actualites .carrousel-pagination li{ display: inline-block;width:6px;padding:0 3px 0 0;list-style-type:none; vertical-align: middle;cursor:pointer;}
+#actualites .carrousel-pagination .temoin{width:6px;height:17px;background:url('../images/carrousel-point-inactif.png') center center no-repeat transparent;cursor:pointer;}
+#actualites .carrousel-pagination .active{width:6px;height:17px;background:url('../images/carrousel-point-actif.png') center center no-repeat transparent;cursor:pointer;}
+
+
+/*CARFREDSEL*/
+
+#carouActuContainer{visibility: hidden;}
+/*#carouActu p.descriptionTittle{font-family:'PeugeotLight';font-size:30px;color:#373533;margin:0px 0 5px 0;}*/
+#carouActu .illus, #carouActu div > div{width:302px; height:158px;}
+#carouActu .illus{margin:0 40px 10px 0;border:1px solid #e7e7e7;}
+#carouActu span.descriptionTittle {font-family:'PeugeotNormal';font-size:18px;color:#373533;margin: 0 0 5px 0;}
+/*#carouActu p.descriptionTittle a:hover{color:#2CAED6;}*/
+
+#carouActu span.description a:hover{color:#2CAED6}
+#carouActu p{font-family:'PeugeotLight';font-size:14px;color:#777777;}
+#carouActu span.resumeActu{font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:18px;color:#777777;margin:0 0 10px 0;}
+#carouActu .link{display:inline-block;height:21px;background:url("../../../templates/peugeot/images/bgd-bouton-grey.jpg") 0 0 repeat-x transparent;margin:0;padding:5px 11px 0 15px;border-radius:19px;box-shadow: 1px 2px 3px #969393;}
+#carouActu .link span{background:url("../../../templates/peugeot/images/arrow-actu.png") right 2px no-repeat transparent;font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#777777;text-align:left;text-transform:uppercase;padding:1px 15px 0 0;}
+#carouActu > div div p{margin:5px 0 10px 0;}
+#carouActu >  div:hover .descriptionTittle{color:#2CAED6;}
+#carouActu >  div:hover .resumeActu{color:#2CAED6;}
+#carouActu span{float:left;}
+
+#carouActuPag{text-align: center; margin-top: 5px;position: absolute;top: 201px;right: 8px;}
+#carouActuPag > a {top: 2px; position: relative;}
+#carouActuPag #carouActuPagPoints{display: inline-block; padding: 0 5px;}
+#carouActuPag #carouActuPagPoints a{display: inline-block;width:6px;padding:0 5px 0 0;list-style-type:none; vertical-align: middle;cursor:pointer; width:6px;height:17px;background:url('../images/carrousel-point-inactif.png') center center no-repeat transparent;cursor:pointer;}
+#carouActuPag #carouActuPagPoints a.selected{background:url('../images/carrousel-point-actif.png') center center no-repeat transparent;}
+#carouActuPag #carouActuPagPoints a span{display: none;}
+
+#carouActu div {text-align: center;}
+#carouActu div img.illus {margin:0;}
+#carouActu div div {text-align: left;margin-top: 16px;}
+
+/*CARFREDSEL END*/
+
+.btnActualite{width:100%;height:44px;background:#FFFFFF;text-align:center;padding:0;margin:2px 0 0 0;border-bottom: 1px solid #b2b2b2;cursor:pointer;}
+.btnActualite a{overflow:hidden;font-family:'PeugeotItalic';font-size:13px;color:#5b5b5b;text-decoration:none;line-height: 44px;}
+.btnActualite a img{position: relative;top: 2px;left: 10px;}
+.btnActualite a img.active{
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+
+/* INFOBULLE LAYER MAPPEMONDE */
+/*.mappemonde .info {position: relative;display:block;height:45px;width:30px;}
+.mappemonde .info span {display: none;}
+.mappemonde .info:hover { background: none; z-index: 500;}
+.mappemonde .info:hover span {background:#ffffff;border: 1px solid #B0B0B0;border-radius:4px;box-shadow:0 0 1px #B0B0B0;color: #525253;display: inline;padding: 3px 5px;position: absolute;top:-18px;white-space: nowrap;}
+.mappemonde .info:hover span.big{left:-23px;}
+.mappemonde .info:hover span.little{left:-13px;}*/
+
+
+/* INFOBULLE LAYER RECHERCHER *//*
+.search .info.searchTool {position: relative;display:block;height:45px;width:30px;}
+.search .info.searchTool span {display: none;}
+.search .info.searchTool:hover { background: none; z-index: 500;}
+.search .info.searchTool:hover span {font-size:12px;background:#ffffff;border: 1px solid #B0B0B0;border-radius:4px;box-shadow:0 0 1px #B0B0B0;color: #525253;display: inline;padding: 3px 5px;position: absolute;top:55px;white-space: nowrap;}
+.search .info.searchTool:hover span.big{left:-95px;}*/
+
+/*infobulles footer*/
+ .info {position: relative;display:block;height:45px;width:30px;}
+ .info span {display: none;}
+ .info:hover { background: none; z-index: 500;}
+ .info:hover span {background:#ffffff;border: 1px solid #B0B0B0;border-radius:4px;box-shadow:0 0 1px #B0B0B0;color: #525253;display: inline;padding: 3px 5px;position: absolute;top:-20px;white-space: nowrap;}
+ .info:hover span.big{left:-23px;}
+ .info:hover span.little{left:-13px;}
+
+
+
+#actualites .carrousel-conteneur{margin:0 auto 30px auto;}
+#actualites .carrouselcontent{width:321px; height:294px; float:left;}
+
+#actualites .carrousel-pagination .carrousel-prev{padding:0 5px 0 0;}
+#actualites .carrousel-pagination .carrousel-next{padding:0 0 0 2px;}
+
+
+
+/* vue produit*/
+#globalProduits .slideNav li a{text-transform:uppercase !important ;font-size:14px;}
+#contextBlocMenu ul li{height:51px;}
+
+
+
+/* PLAN DU SITE*/
+.pageArticle .mainContent .meaDescriptionPrestations .planSite .content{padding:40px 22px;}
+.pageArticle .mainContent .meaDescriptionPrestations .planSite .section{overflow:hidden;border-bottom:1px solid #d4d4d4;padding:24px 0;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section.first{padding:0 0 24px 0;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section.last{border-bottom:none;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section.last .part {width:500px}
+.pageArticle .mainContent .meaDescriptionPrestations  .section a,
+.pageArticle .mainContent .meaDescriptionPrestations  .section .meaSection a{text-decoration: none;color:#777777;font-family: 'PeugeotLight';}
+.pageArticle .mainContent .meaDescriptionPrestations  .section a:hover,
+.pageArticle .mainContent .meaDescriptionPrestations  .section .meaSection a:hover{text-decoration: none;color:#2caed6;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section .part{overflow:hidden;width:270px;}
+.pageArticle .mainContent .meaDescriptionPrestations .section li{ list-style-type:none;min-height:22px;padding:0 0 0 10px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section li a{padding:0 0 0 10px;background: url("../images/arrows.png") no-repeat scroll 0 -446px transparent;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section li a:hover{color:#2caed6;padding:0 0 0 10px;background: url("../images/arrows.png") no-repeat scroll 0 -2096px transparent}
+.pageArticle .mainContent .meaDescriptionPrestations  .section .meaMainSection{font-family: 'PeugeotLight';font-size:30px; color:#373533;margin:0; font-style:normal;}
+.pageArticle .mainContent .meaDescriptionPrestations  .section .meaSection,
+.pageArticle .mainContent .meaDescriptionPrestations  .section .meaSection a{margin:24px 0 10px 0;font-family: 'PeugeotItalic'; font-size:18px; color:#777777;font-style:normal;}
+
+
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux li{ list-style-type:none;float:left;height:40px;background:url("../images/bgd-sprite-picto.png") no-repeat  0px -548px;padding:0 23px 0 0;line-height:10px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .facebook:hover{float:left;background:url("../images/bgd-sprite-picto.png") no-repeat  0px -774px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux li a,
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux li a:hover{background:none}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux li.last{padding:0;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .twitter{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -590px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .twitter:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -816px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .youtube{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -635px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .youtube:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -861px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .google{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -685px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .google:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -911px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .lastBoard{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -729px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .reseaux .lastBoard:hover{background:url('../images/bgd-sprite-picto.png') no-repeat  0px -964px;}
+
+
+.pageArticle .mainContent .meaDescriptionPrestations  .info {position: relative;display:block;height:45px;width:30px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .info span {display: none;}
+.pageArticle .mainContent .meaDescriptionPrestations  .info:hover { background: none; z-index: 500;}
+.pageArticle .mainContent .meaDescriptionPrestations  .info:hover span {background:#ffffff;border: 1px solid #B0B0B0;border-radius:4px;box-shadow:0 0 1px #B0B0B0; color: #525253;display: inline;padding: 3px 5px;position: absolute;top:-18px;left:-23px;white-space: nowrap;font-size:11px;}
+.pageArticle .mainContent .meaDescriptionPrestations  .facebook  .info:hover span{left:-10px}
+
+/*backToTop*/
+.backToTop{width:960px;position:fixed;bottom:82px;z-index:2;}
+.backToTop .arrow{float:right;}
+.backToTop a{display:block;width:32px;height:32px;background:url('../../../templates/peugeot/images/arrows.png') no-repeat 0 -1000px transparent;position:fixed;z-index:50;}
+
+
+#subLogo{text-transform: uppercase; width: 87px; position: absolute; top: 105px; left: 45px; z-index: 90; text-align: center;}
+#subLogo a { color: #ffffff; font-family:'PeugeotBold'; font-size: 18px;}
+#subLogo a:hover{color:#2caed6;}
+#subLogo a .light{ font-family: 'PeugeotLight'; font-size: 16px;  }
+#subLogo a span{ font-size:22px; font-family:'PeugeotBold'; letter-spacing: 1px;}
+
+#subLogo .homepage-sublogo  {
+  margin-top: 30px;
+}
+
+#subLogo .homepage-sublogo .subLogo-line1 {
+  font-family: 'PeugeotLight';
+  font-size: 13px;
+}
+
+#subLogo .homepage-sublogo .subLogo-line2 {
+  font-size: 14px;
+}
+
+#subLogo .homepage-sublogo .subLogo-line3 {
+  font-size: 40px;
+}
+
+/* responsive */
+@media screen and (max-height: 768px) {
+    .homepageNavLink li{
+        padding: 6px 0 6px 0;
+        font-size: 19px;
+    }
+    .homepageTitle p{
+        margin:36px auto 25px auto;
+        padding-top: 5px;
+    }
+    .homePageNav .title{
+        font-size: 26px;
+    }
+    .homePageNav .title span{
+        font-size: 46px;
+    }
+
+}
+
+/* Peugeot New! Header */
+
+    .pagePeugeotNew .mainContent .conteneurText h1,
+    .pagePeugeotNew .mainContent h1{margin: 30px 0 35px 0;}
+
+    .pagePeugeotNew ul.menu {
+        background: #FFFFFF;
+        text-align:center;
+        border-bottom: 1px solid #d4d4d4;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+        .pagePeugeotNew .menu li {
+            display: inline-block; padding: 25px 0;
+			padding-left:33px;
+        }
+		.pagePeugeotNew .menu li +li {padding-left:0;}
+		.pagePeugeotNew .menu li +li +li {padding-right:33px;}
+            .pagePeugeotNew ul.menu a{
+                text-transform: uppercase;
+                color:#373533;
+                padding: 0px 24px;
+                border-right: 1px solid #d4d4d4;
+                font-size: 20px;
+            }
+            .pagePeugeotNew ul.menu li+li+li a {border:none;}
+            .pagePeugeotNew ul.menu a:hover, .pagePeugeotNew ul.menu .active a{color:#2caed6;}
+
+   /*         .pagePeugeotNew ul.menu a.active {color: #2caed6;}*/
+
+    .pagePeugeotNew .section{
+         background:#FFFFFF;
+         padding: 25px 24px 0 24px;
+    }
+        .pagePeugeotNew .mainContent .section p{
+            color:#777777;
+            text-align: left;
+            height:25px !important;
+        }
+     .pagePeugeotNew + #sharesLayer +input +input +input + #emotionGuide {display: none;}
+
+
+	.pagePeugeotNew input::-webkit-input-placeholder { color:#777777;}
+	.pagePeugeotNew input:-moz-placeholder{ color:#777777;}
+	.pagePeugeotNew input::-moz-placeholder{ color:#777777;}
+	.pagePeugeotNew input:-ms-input-placeholder { color:#777777;}
+
+        .pagePeugeotNew .backToTop{width:910px;}
+/* peugeot news back history*/
+
+#PeugeotNewReturn {
+    width: 155px; height: 25px;
+    position: fixed;
+    top: 73px;
+    right: 0;
+    z-index: 100;
+    background: url('../../../images/peugeotnews/bg-return-button.png') no-repeat center right;
+    text-align: right;
+    padding-right: 20px;
+}
+#PeugeotNewReturn a {
+    font-size: 10px;
+    text-transform: uppercase;
+    background: url('../../../images/peugeotnews/arrow-link-return-button.png') no-repeat 0 0;
+    padding-left: 8px;
+}
+
+.carousel .section.blank {
+	visibility: hidden;
+}
+
+/************************************/
+/*          sharesLayer             */
+/************************************/
+
+#sharesLayer{ width: 100%; position: fixed; overflow: hidden; max-height: 250px; z-index:10;padding-top: 4px;}
+    #sharesLayer .content{
+        width: 100%; height: 0px; background: #FFFFFF;overflow: hidden;
+-moz-box-shadow: 0px -1px 5px 0px #5b5b5b;
+-webkit-box-shadow: 0px -1px 5px 0px #5b5b5b;
+-o-box-shadow: 0px -1px 5px 0px #5b5b5b;
+box-shadow: 0px -1px 5px 0px #5b5b5b;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#5b5b5b, Direction=90, Strength=5);}
+    #sharesLayer .open{
+        position:relative;cursor: pointer; width: 260px; height: 32px; margin: 0 auto;
+        background: url('../../../images/peugeotnews/layer-share-open-bg.png') no-repeat 235px -53px #FFFFFF;
+        text-align: center;  line-height: 32px;
+        text-transform: uppercase;
+        font-size:15px;
+-moz-box-shadow: 0px -2px 3px 0px  #5b5b5b;
+-webkit-box-shadow: 0px -2px 3px 0px  #5b5b5b;
+-o-box-shadow: 0px -2px 3px 0px #5b5b5b;
+box-shadow: 0px -2px 3px 0px #5b5b5b;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#5b5b5b, Direction=90, Strength=5);}#sharesLayer .open.show{background-position: 235px 9px ; }
+    #sharesLayer .close{}
+    #sharesLayer .content .center{width:900px; margin:0 auto;overflow: hidden; position:relative;}
+    #sharesLayer .close{
+        width:23px;height:23px;
+        position:absolute;
+        top:17px; right:0;
+        background: url('../images/bgd-sprite-picto.png') no-repeat -618px -6px;
+        cursor:pointer;
+    }
+            #sharesLayer .newsletter{
+                width:271px;
+                float:left;
+            }
+            #sharesLayer .sectionShare{
+                float:left;
+                margin-top: 35px;
+                margin-left: 44px;
+            }
+                #sharesLayer .sectionShare .contentShare {
+                    min-width: 50px;
+                    float:left;
+                    margin: 0 15px;
+                    text-align: center;
+
+                }
+
+                    #sharesLayer .contentShare .picture{
+                        width:46px; height:45px;
+                        border-bottom: 1px solid #5b5b5b;
+                        margin: 0 auto;
+                        background: url('../../../images/peugeotnews/sprite-layer-share-bg.png') no-repeat 11px 12px;
+                    }
+                    /* etat no hover */
+                    #sharesLayer .contentShare.twitter .picture {background-position: -67px 12px;}
+                    #sharesLayer .contentShare.youtube .picture {background-position: -153px 12px;}
+                    #sharesLayer .contentShare.google .picture {background-position: -243px 12px;}
+                    #sharesLayer .contentShare.pinterest .picture {background-position: -329px 12px;}
+                    #sharesLayer .contentShare.instagram .picture {background-position: -428px 12px;}
+                    /* etat hover */
+                    #sharesLayer .contentShare.facebook:hover .picture {background-position: 11px -37px;}
+                    #sharesLayer .contentShare.twitter:hover .picture {background-position: -67px -37px;}
+                    #sharesLayer .contentShare.youtube:hover  .picture {background-position: -153px -37px;}
+                    #sharesLayer .contentShare.google:hover  .picture {background-position: -243px -37px;}
+                    #sharesLayer .contentShare.pinterest:hover  .picture {background-position: -329px -37px;}
+                    #sharesLayer .contentShare.instagram:hover  .picture {background-position: -428px -37px;}
+
+                    #sharesLayer .sectionShare .count{
+                        margin: 11px 0 22px 0;
+                        font-family: peugeotBold;
+                        font-size: 14px;
+                        color: #5b5b5b;
+                    }
+                    #sharesLayer .contentShare.facebook:hover .count {color:#3b5598;}
+                    #sharesLayer .contentShare.twitter:hover .count {color:#00c0f7;}
+                    #sharesLayer .contentShare.youtube:hover  .count {color:#c9332c;}
+                    #sharesLayer .contentShare.google:hover  .count {color:#ff4444;}
+                    #sharesLayer .contentShare.pinterest:hover  .count {color:#cb2027;}
+                    #sharesLayer .contentShare.instagram:hover  .count {color:#274058;}
+
+                    #sharesLayer .sectionShare a {
+                        background:#5b5b5b;
+                        padding: 4px 8px;
+                        font-family: arial;
+                        font-size:11px;
+                        cursor:pointer;
+                        line-height: 22px;
+                    }
+
+                    #sharesLayer .contentShare.facebook:hover a {background:#3b5598;}
+                    #sharesLayer .contentShare.twitter:hover a {background:#00c0f7;}
+                    #sharesLayer .contentShare.youtube:hover  a {background:#c9332c;}
+                    #sharesLayer .contentShare.google:hover  a {background:#ff4444;}
+                    #sharesLayer .contentShare.pinterest:hover  a {background:#cb2027;}
+                    #sharesLayer .contentShare.instagram:hover  a {background:#274058;}
+
+        .newsletter input::-webkit-input-placeholder{ color:#777777;}
+        .newsletter input:-moz-placeholder{ color:#777777;}
+        .newsletter input::-moz-placeholder{ color:#777777;}
+        .newsletter input:-ms-input-placeholder { color:#777777;}
+
+        .newsletter p { font-size: 16px; color:#5b5b5b; margin: 40px 0 20px 0;}
+        .newsletter form{/*position: relative;*/overflow: hidden;border: 1px solid #B5B5B7;}
+            .newsletter input[type="text"] {
+				float: left;
+				width: 170px;
+                height: 28px;
+                /*padding: 0 40px 0 10px;*/
+				padding:0 10px;
+                color:#777777;
+                /*border:1px solid #b5b5b7;*/
+				border: none;
+				overflow: hidden;
+				font-family: peugeotItalic;
+            }
+            .newsletter input[type="submit"]{
+				float: right;
+				height:28px;
+                width:40px;
+                background: none;
+                border: none;
+                /*position: absolute;*/
+                right:auto;
+                /*top:1px;*/
+                cursor:pointer;
+                color:#777777;
+                background: #FFFFFF url('../../../images/peugeotnews/line-input-search.png') no-repeat 0px 5px;
+            }
+
+.cookie .close {
+	background: url('../images/btn-close-layer-cnil.png') no-repeat 0 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	height: 15px;
+	margin: 0 0 0 25px;
+	position: relative;
+  	right: auto;
+	top: auto;
+	vertical-align: middle;
+	width: 15px;
+}
+
+.cookie{background:#2a292e;padding: 10px 30px;overflow: hidden;position: relative;top: 0;border-bottom: solid 1px #2a292e;z-index: 100000; }
+.cookie > p {width: 95%;font-size:13px;color: #fff;display: inline-block;font-family: 'PeugeotNormal';vertical-align: middle;}
+
+
+.cookie a{color: #29b3e1;}
+.cookie a:hover{text-decoration: underline;}
+/*.cookiebanner #header{top: 70px;}*/
+
+
+/* footer article */
+.moduleActu .newsletter.lineSeparator{height: 76px;}
+.moduleActu .newsletter.lineSeparator form{width: 270px;}
+
+/*menu secondaire*/
+.pagePeugeotNew ul.menu {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*Pop-up*/
+.layer .video{width:774px;max-height:414px;height: 414px;overflow:hidden; /* on fixe la largeur et la hauteur du conteneur d'une iframe video (permet de couper le outline sur obj flash ie) */}
+.layer .video iframe {height: 414px;}
+.layer .video img {height: 388px;}
+.layer .top { padding:0;}
+.layer a:hover{color:#2caed6;}
+.layer{width:800px;position:fixed; top:0; left:0;right:0;z-index:999999; background-color:black; padding:20px;}
+.layer p.layerTitle{font-family:'PeugeotLight';font-size:30px;color:#ffffff;max-width: 570px;margin:0 0 0px 0;height: 45px;}
+.layer p{font-family:Arial, Helvetica, sans-serif;font-size:13px;display:block;width:775px;color:#ffffff; padding:0;overflow: hidden;}
+.layer .conteneur{width:775px; margin:0 auto;}
+.layer .conteneur .blcFR{margin:0;}
+.layer .top a{font-size:12px;font-family:'PeugeotNormal';}
+.layer .top .blcFR{width: 200px;padding:0 0 10px 0;}
+.layer .top .first {font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#777777;padding:3px 5px 0 0;background:none;}
+.layer .top .blcFR li+li a{display:block;width:18px;height:18px;background:url("../../../templates/peugeot/images/sprite-picto.png") 0 2px no-repeat transparent; }
+.layer .top .blcFR li+li+li a{display:block;width:18px;height:18px;background:url("../../../templates/peugeot/images/sprite-picto.png") 0 -48px no-repeat transparent; }
+.layer .top .blcFR li+li+li+li a{display:block;width:18px;height:18px;background:url("../../../templates/peugeot/images/sprite-picto.png") 0 -147px no-repeat transparent; }
+.layer .top .blcFR li+li+li+li+li a{display:block;width:18px;height:18px;background:url("../../../templates/peugeot/images/sprite-picto.png") 0 -197px no-repeat transparent; }
+.layer .top .blcFR li+li a:hover {background-position:0 -698px; }
+.layer .top .blcFR li+li+li a:hover{background-position: 0 -748px; }
+.layer .top .blcFR li+li+li+li a:hover{background-position: 0 -797px; }
+.layer .top .blcFR li+li+li+li+li a:hover{background-position:0 -847px; }
+
+.layer .top .blcFR li.last{padding:0;}
+.layer .top .blcFR li.last a{width:18px;height:18px;background:url("../../../templates/peugeot/images/linkedin_white.png") 0px 3px no-repeat;}
+.layer .top .blcFR li.last a:hover{width:18px;height:18px;background:url("../../../templates/peugeot/images/linkedin_hover.png") 0px 3px no-repeat;}
+.layer .vignettes{margin: 5px auto 0 auto;display: inline-block;width: 774px !important;position: relative;}
+.layer .vignettes .section{width:240px;float:left;margin:0 10px 0 0;}
+.layer .vignettes .section.last{width:246px;margin:0;}
+.layer .vignettes .section.active img{border:2px solid #2caed6;}
+.layer .vignettes .section img{border:2px solid #000000;}
+.layer .vignettes .section:hover img{ border:2px solid #2CAED6;}
+.layer .vignettes .section a{float:left;}
+.layer .vignettes .section .legende{float:left;}
+.layer .vignettes .section .legende p{display:block;width:118px;padding:0 0 0 10px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#ffffff;font-weight:bold;}
+.layer .vignettes .section:hover .legende a { color:#2CAED6;}
+.layer .vignettes .section:hover .legende p, .layer .vignettes .section:hover .legende span{color:#2CAED6;}
+
+.layer .vignettes .section .legende span{display:block;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#ffffff;font-weight:normal;}
+.layer .vignettes .section .legende.active p{display:block;width:118px;padding:0 0 0 10px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#2caed6;font-weight:bold;}
+
+.layer .vignettes .section .legende.active span{display:block;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#2caed6;font-weight:normal;}
+
+.layer .vignettes .section .legende p a{display:block;width:118px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#ffffff;font-weight:bold;}
+.layer .vignettes .section .legende.active p a{display:block;width:118px;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#2caed6;font-weight:bold;}
+.layer .link{padding-top:2px;position:absolute;left:43%;bottom:0;}
+.layer .apps{position:relative; z-index:2}
+.layer .apps p{font-family:'PeugeotItalic';font-size:22px;}
+.layer .beginButton{position:absolute;top:35%;left:0;padding:25px;}
+.layer .beginButton p{width:950px;text-align:center}
+
+.layer .close{ background:url("../../../templates/peugeot/images/bgd-sprite-picto.png") no-repeat scroll right -124px transparent;display: block;height: 28px;position: fixed;right: 12px;top:2%;width: 23px; cursor:pointer;}
+
+.layer-importateur{width: 400px; background-color: #ffffff; color: #000000!important;}
+.layer-importateur .conteneur {width: 400px;margin: 0 auto;}
+.layer-importateur .close{
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+    right: 20px;
+    background: url("../../../templates/peugeot/images/cross-pp.png");
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+.importateur-pp{font-size: 12px;line-height: 19px;}
+.importateur-pp .name-pp h3{font-size: 16px;margin-bottom: 15px;}
+.importateur-pp .name-pp{width: 380px;}
+
+#opacityBoxLayer, #importateurBoxLayer{
+    background: url('../../../templates/peugeot/images/bgd-opacite-menu.png') 0 0 repeat transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 102;
+}
+
+.layer{color: #fff;}
