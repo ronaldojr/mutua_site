@@ -228,7 +228,7 @@ html{overflow-y:hidden;}
 .carrouselProduit .listVehicule.auto{width:895px;position: absolute;margin:0;}
 #voitures .carrouselProduit .listVehicule.auto{width:1033px;position: absolute;margin:0;top:0;left:0;} /* plus de 4  vignettes*/
 #utilitaires .carrouselProduit .listVehicule.auto{width:844px;position: absolute;margin:0;top:0;left:0; text-align: center} /* 4 vignettes*/
-.englobCarrousel{position: relative;width: 940px;margin:0 auto;}
+.englobCarrousel{position: relative;width: px;margin:0 auto;}
 .arrow.left{position: absolute;top:0;left:0;}
 .arrow.right{position: absolute;top:0;right:0}
 

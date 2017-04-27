@@ -1,14 +1,8 @@
-@font-face {font-family:'PeugeotLight';src:url('../fonts/peugeot_light-webfont.eot');src:local('?'),url('../fonts/peugeot_light-webfont.woff') format('woff'),url('../fonts/peugeot_light-webfont.ttf') format('truetype'),url('../fonts/peugeot_light-webfont.svg') format('svg');}
-@font-face {font-family:'PeugeotNormal';src:url('../fonts/peugeot_normal-webfont.eot');src:local('?'),url('../fonts/peugeot_normal-webfont.woff') format('woff'),url('../fonts/peugeot_normal-webfont.ttf') format('truetype'),url('../fonts/peugeot_normal-webfont.svg') format('svg');}
-@font-face {font-family:'PeugeotBoldItalic';src:url('../fonts/peugeot_bold_italic-webfont.eot');src:local('?'),url('../fonts/peugeot_bold_italic-webfont.woff') format('woff'),url('../fonts/peugeot_bold_italic-webfont.ttf') format('truetype'),url('../fonts/peugeot_bold_italic-webfont.svg') format('svg');}
-@font-face {font-family:'PeugeotBold';src:url('../fonts/peugeot_bold-webfont.eot');src:local('?'),url('../fonts/peugeot_bold-webfont.woff') format('woff'),url('../fonts/peugeot_bold-webfont.ttf') format('truetype'),url('../fonts/peugeot_bold-webfont.svg') format('svg');}
-@font-face {font-family:'PeugeotVertical';src:url('../fonts/peugeot_vertical-webfont.eot');src:local('?'),url('../fonts/peugeot_vertical-webfont.woff') format('woff'),url('../fonts/peugeot_vertical-webfont.ttf') format('truetype'),url('../fonts/peugeot_vertical-webfont.svg') format('svg');}
-@font-face {font-family:'PeugeotItalic';src:url('../fonts/peugeot_italic-webfont.eot');src:local('?'),url('../fonts/peugeot_italic-webfont.woff') format('woff'),url('../fonts/peugeot_italic-webfont.ttf') format('truetype'),url('../fonts/peugeot_italic-webfont.svg') format('svg');}
-@font-face {font-family:'PeugeotStyle';src:local('?'),url('../fonts/Peugeot_Style_v2.ttf') format('truetype');}
 
 /* CSS Document */
-* {margin:0; font-family:'PeugeotNormal';font-weight:normal;}
-strong{font-weight: bold;font-family: arial;}
+* {margin:0; font-family:Calibri;font-weight:normal;}
+p {font-family: Calibri}
+strong{font-weight: bold;font-family: Calibri;}
 body, li, ol, p, form, div, h1, h2, h3, h4, h5, h6, label, a, table {margin:0; padding:0;}
 html, body { height:100%; width:100%}
 body{ background:#000000; background-image: url('../../../templates/peugeot/images/loading.gif'); background-position: 50% 50%; background-repeat: no-repeat;}

@@ -13,8 +13,9 @@
 	<meta name="description" content="Discover Peugeot's automobile technology, its engine, safety and service-specific performances and innovations.
 " />
 	<meta name="generator" content="Peugeot" />
-	<title>Automotive technology : engines, security and connected services -  Peugeot</title>
-	<link href="./templates/peugeot/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<title>Mútua</title>
+	<!-- <link href="./templates/peugeot/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> -->
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="./templates/peugeot/css/screen.css" rel="stylesheet" type="text/css" />
 	<link href="./components/com_peugeot/css/categorie.css" rel="stylesheet" type="text/css" />
 	<link href="./media/mod_languages/css/template.css" rel="stylesheet" type="text/css" />
@@ -92,8 +93,9 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 		<div id="main">
 				
 				<div id="header">
-						<div class="logo"><a href="http://www.peugeot.com/en" onClick="taggage('/clic_logo_header');"><img src="http://media.peugeot.com/templates/peugeot/images/logo-peugeot-header.png" width="77" height="49" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></a>
-								<img src="http://media.peugeot.com/templates/peugeot/images/slogan-header.png" width="155" height="9" alt="Motion & Emotion" class="sloganlogo texte"  nopin="nopin"/>
+						<div class="logo"><a>
+                        
+ <img src= "img/LOGO_Pmutua.png"width="105" height="49" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/><img src= "img/imgFRASE.png"  ALIGN=LEFT width="500" height="20" alt="Motion & Emotion" class="sloganlogo texte"  nopin="nopin"/> </a>
 						</div>
 						<ul class="headerContRight">
                             								<li class="first"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'Menu'});"
@@ -121,32 +123,32 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 <li class="item-250"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Listen'});" href="/en/listen" >Listen</a></li><li class="item-251"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Experiment'});" href="/en/experiment" >Experiment</a></li><li class="item-252"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Feel'});" href="/en/feel" >Feel</a></li><li class="item-253"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Watch'});" href="/en/watch" >Watch</a></li></ul>
 
                                                         </div>
-                                                    </div>
+                                                    </div>		
 												</div>
 										</div>
 								</li>  
 								<li class="search">
-                                    <a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'SEARCH'});" href="javascript:void(0);" class="searchTool">SEARCH</a>
-                                    <form id="rechercherDansSite" action="/en/search" method="get">
+                                    <a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'SEARCH'});" href="javascript:void(0);" class="searchTool">QUEM SOMOS?</a>
+                                    <form id="rechercherDansSite" action="/en/search" method="get">		
                                         
                                         <input type="text" id="search" name="q" placeholder="Your search" autocomplete="off">
                                         <button type="submit">Ok</button>
                                     </form>
 								</li>
                                 <li class="mappemonde">
-                                    <a id="searchMap" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'PEUGEOT IN YOUR COUNTRY'});" class="map" href="javascript:void(0);"  onClick="taggage('/clic_header-boussole');"><span></span>PEUGEOT IN YOUR COUNTRY</a>
+                                    <a id="searchMap" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'PEUGEOT IN YOUR COUNTRY'});" class="map" href="javascript:void(0);"  onClick="taggage('/clic_header-boussole');">O QUE FAZEMOS?</span></a>
                                 </li>
                               
 						</ul>
 						<div class="globalMenu">
 
-							<div id="globalMenu">&nbsp;</div>
+							<div id="globalMenu"></div>
 						</div>
 						<br class="clear" />
 							<div id="breadcrumb">
 		<div class="lienNavHeader">
 			<div class="breadcrumbs">
-								<a href="/en" class="pathway">Home</a> <img src="/media/system/images/arrow1.png" alt="" /> <span>Technologies &amp; Innovations</span>			</div>
+								<a href="/en" class="pathway"></a>  <span></span>			</div>
 		</div>
 			</div>
 
@@ -163,21 +165,17 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
         <input type="hidden" id="nomCategorie" value="Technologies & Innovations" />
 
         <div class="catProducts">
-            <img class="bgSize" src="./img/fundo01.jpg" alt="background Technologies & Innovations - " width="1920"/>
+            <img class="bgSize" src="img/fundo01.jpg" alt="background" width="1920"/>
             <div class="menuCat">
                 <div class="center">
-                    <h1>Technologies & Innovations</h1>
-                    <p>Leading-edge technology working for comfort, safety and the environment</p>                    <ul class="listeProduits">
-                                                                                    <li class="first"><a data-ua="Technologies & Innovations--NavMain--Engines" class="link_engines" href="javascript:void(0);" onClick="taggage('/clic_Technologies & Innovations_Engines');">Engines</a></li>
-                                                                                                                <li class=""><a data-ua="Technologies & Innovations--NavMain--Safety" class="link_safety" href="javascript:void(0);" onClick="taggage('/clic_Technologies & Innovations_Safety');">Safety</a></li>
-                                                                                                                <li class=""><a data-ua="Technologies & Innovations--NavMain--Connectivity" class="link_connected-services" href="javascript:void(0);" onClick="taggage('/clic_Technologies & Innovations_Connectivity');">Connectivity</a></li>
-                                                                                                                <li class="last"><a data-ua="Technologies & Innovations--NavMain--Making driving a pleasure" class="link_making-driving-a-pleasure" href="javascript:void(0);" onClick="taggage('/clic_Technologies & Innovations_Making driving a pleasure');">Making driving a pleasure</a></li>
-                                                                        </ul>
-                </div>
+                    <h1><img src="img/LOGO_FundoTransparente.png" width="341" height="107"></h1>					
+           <ul class="listeProduits">
+                  </ul>
+              </div>
             </div>
         </div>
         <div style="width: 100%; position: fixed; left: 0px; right: 0px; bottom: 100px; min-width: 1024px;">
-            <div style="margin:0 auto" class="scroll"><p>Scroll down</p><div class="anim"><div class="arrow"></div></div></div>
+            <div style="margin:0 auto" class="scroll"><p><p style="font-family: Calibri">ROLAR PARA BAIXO</p><div class="anim"><div class="arrow"></div></div></div>
         </div>
     </div>
 
@@ -190,72 +188,47 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                         <div class="vehicules">
                 <div class="center">
                                                                         <div class="products detail">
-                                <h2>Engines</h2>
-                                <p>Reliable engines, hybrid cars and efficient technologies</p>                                                                    <div class="englobCarrousel">
-                                        <span class="arrow left"><a href="javascript:void(0);"><img src="http://media.peugeot.com/templates/peugeot/images/arrow-carrousel-left.png" width="15" height="34" alt="previous" /></a></span>
-                                        <div class="carrouselProduit">
-                                                                                            <div class="newListVehicule" data-id="130">
+                               <p><h2 style="font-family: Calibri;"><strong>PORTIFÓLIO fotos</strong></h2>
+                                <p style="font-family: Calibri">Conheça alguns Trabalhos</p>                                                                    
+                               
 
-                                                                                                            <div class="meaGamme">
-                                                            <a href="/en/technology/engines" target=""><span><span class="strongTitleGamme">Discover</span> Peugeot's Engines</span></a>
-                                                        </div>
-                                                    
-                                                    
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/eat6-automatic-gearbox">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/eat6.jpg" alt="Peugeot EAT6 automatic gearbox"/>
-                                                                    <span class="title"><span><span>EAT6 automatic gearbox</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/puretech">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/puretech.jpg" alt="Peugeot PureTech"/>
-                                                                    <span class="title"><span><span>PureTech</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/thp">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/THP.jpg" alt="Peugeot THP"/>
-                                                                    <span class="title"><span><span>THP</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/technology-bluehdi">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/blue-hdi.jpg" alt="Peugeot BlueHDi"/>
-                                                                    <span class="title"><span><span>BlueHDi</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/hybrid4">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/hybrid4.jpg" alt="Peugeot HYbrid4 "/>
-                                                                    <span class="title"><span><span>HYbrid4 </span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/electrical">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/100-electrique.jpg" alt="Peugeot 100% Electric"/>
-                                                                    <span class="title"><span><span>100% Electric</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/engines/e-hdi-micro-hybrid">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/Peugeot_308_stopstart.jpg" alt="Peugeot Stop&Start"/>
-                                                                    <span class="title"><span><span>Stop&Start</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                                                                            </div>
-                                                <a class="prev" id="prev-130" href="/"></a>
-                                                <a class="next" id="next-130" href="/"></a>
-                                                                                    </div>
-                <!--																				<a href="javascript:void(0);"><span class="arrow right"></span><img src="/--><!--templates/peugeot/images/arrow-carrousel-right.png" width="15" height="34" alt="next" /></a>-->
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            
+                                            <div class="col-md-3" style="margin-left: 50px;">
+                                                <a href="#"><img class="thumbnail" src="./img/fotos/img01.jpg" /></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#"><img class="thumbnail" src="./img/fotos/img02.jpg" /></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#"><img class="thumbnail" src="./img/fotos/img03.jpg" /></a>
+                                            </div>
+                                        </div>
+                                        <br /><br /><br />
+                                        <div class="row"  style="margin-top: 80px;">
+                                            <div class="col-md-3"  style="margin-left: 50px;">
+                                                <a href="#"><img class="thumbnail" src="./img/fotos/img04.jpg" /></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#"><img class="img-thumbnail thumbnail" src="./img/fotos/img05.jpg" /></a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#"><img class="thumbnail" src="./img/fotos/img06.jpg" /></a>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                                            </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+
+
+
+
+
+                                </div>
                             <!--														                                                                                                                                                            <div class="meaGamme">
                                                                                                                                                                             <div class="content">
                                                                                                                                                                                             <p><a href="/" target=""></a></p>
@@ -281,30 +254,6 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
             </div>
 
-                            <div class="lastActus">
-                    <div class="content">
-                        <div class="blockActus">
-                                                        
-                                <div class="title">See also</div>
-                                <div class="blockActusContent">
-                                    <div class="titleProduct">Cars</div>
-                                    <p>Peugeot’s expertise exemplified in its latest models</p>                                    <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target="">See Cars</a></div>
-                                </div>
-                                                    </div>
-
-                                                    <div class="discover">
-                                                                    <div class='mappmonde'></div>
-                                    <div class="discover-data-1">
-                                        <strong>Peugeot Cars</strong><br/>
-                                        in your country<br/>
-                                        <a class="discover-link" onclick="dataLayer.push({'event': 'uaevent', 'eventCategory': 'Link', 'eventAction': 'Redirection::kpp', 'eventLabel': 'Peugeot Cars::http://carros.peugeot.com.br/nossos-carros'});"
-                                           href="http://carros.peugeot.com.br/nossos-carros" target="_blank">
-                                            CONFIGURE                               
-                                        </a>
-                                    </div>
-                                                            </div>
-                                            </div>
-                </div>
                     </div>
                                 <div id="safety" class="contentCategory slide">
 
@@ -314,44 +263,10 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                             <img class="bgSize" src="./img/fundo03.jpg" alt="background Technologies & Innovations - " width="1920"/>
                         <div class="vehicules">
                 <div class="center">
-                                                                                                                    <div class="products detail">
-                                <h2>Safety</h2>
-                                <p>Improved speed control, vigilance and road-holding</p>                                                                    <div class="englobCarrousel">
-                                        <span class="arrow left"><a href="javascript:void(0);"><img src="http://media.peugeot.com/templates/peugeot/images/arrow-carrousel-left.png" width="15" height="34" alt="previous" /></a></span>
-                                        <div class="carrouselProduit">
-                                                                                            <div class="newListVehicule" data-id="131">
-
-                                                                                                            <div class="meaGamme">
-                                                            <a href="/en/technology/safety" target=""><span><span class="strongTitleGamme">Discover</span> Peugeot's Safety</span></a>
-                                                        </div>
-                                                    
-                                                    
-                                                                                                                    <div>
-                                                                <a href="/en/technology/safety/shock-protection">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/protection-optimale-securite-02.jpg" alt="Peugeot Shock protection"/>
-                                                                    <span class="title"><span><span>Shock protection</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/safety/driving-control">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/maitriser-son-vehicule.jpg" alt="Peugeot Driving control "/>
-                                                                    <span class="title"><span><span>Driving control </span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                            
-                                                                                                                    <div>
-                                                                <a href="/en/technology/safety/increased-safety">
-                                                                    <img class="bgd" src="http://media.peugeot.com/images/Vignettes-Home-Rubrique/parer-a-toute-les-eventualites.jpg" alt="Peugeot Increased Safety"/>
-                                                                    <span class="title"><span><span>Increased Safety</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
-                                                                </a>
-                                                            </div>
-                                                                                                                                                            </div>
-                                                <a class="prev" id="prev-131" href="/"></a>
-                                                <a class="next" id="next-131" href="/"></a>
-                                                                                    </div>
-                <!--																				<a href="javascript:void(0);"><span class="arrow right"></span><img src="/--><!--templates/peugeot/images/arrow-carrousel-right.png" width="15" height="34" alt="next" /></a>-->
-                                    </div>
+                <div class="products detail">
+                	
+                                <h2 style="font-family: Calibri;"><strong>PORTIFÓLIO VÍDEOS</strong></h2>
+                                <p style="font-family: Calibri;">Rolo dos Diretores	</p>                                                                    
                                                             </div>
                             <!--														                                                                                                                                                            <div class="meaGamme">
                                                                                                                                                                             <div class="content">
@@ -378,42 +293,19 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
             </div>
 
-                            <div class="lastActus">
-                    <div class="content">
-                        <div class="blockActus">
-                                                        
-                                <div class="title">See also</div>
-                                <div class="blockActusContent">
-                                    <div class="titleProduct">Cars</div>
-                                    <p>Peugeot’s expertise exemplified in its latest models</p>                                    <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target="">See Cars</a></div>
-                                </div>
-                                                    </div>
-
-                                                    <div class="discover">
-                                                                    <div class='mappmonde'></div>
-                                    <div class="discover-data-1">
-                                        <strong>Peugeot Cars</strong><br/>
-                                        in your country<br/>
-                                        <a class="discover-link" onclick="dataLayer.push({'event': 'uaevent', 'eventCategory': 'Link', 'eventAction': 'Redirection::kpp', 'eventLabel': 'Peugeot Cars::http://carros.peugeot.com.br/nossos-carros'});"
-                                           href="http://carros.peugeot.com.br/nossos-carros" target="_blank">
-                                            CONFIGURE                               
-                                        </a>
-                                    </div>
-                                                            </div>
-                                            </div>
-                </div>
+                           
                     </div>
                                 <div id="connected-services" class="contentCategory slide">
 
             <input type="hidden" id="nomPageInterne" value="Connectivity" />
             <input type="hidden" id="nomCategorie" value="Technologies & Innovations" />
 
-                            <img class="bgSize" src="./img/fundo04.jpg" alt="background Technologies & Innovations - " width="1920"/>
+                            <img class="bgSize" src="img/fundo04.jpg" alt="background Technologies & Innovations - " width="1920"/>
                         <div class="vehicules">
                 <div class="center">
-                                                                                                                                                                <div class="products detail">
-                                <h2>Connectivity</h2>
-                                <p>An incomparable range of features and applications</p>                                                                    <div class="englobCarrousel">
+                                                                                                                                                                <div class="products detail"><p><p>
+                                <h2 style="font-family: Calibri;"><strong>PROFISSIONAIS</strong></h2>
+                                <p style="font-family: Calibri;">os MÚTUEIROS</p>                                                                    <div class="englobCarrousel">
                                         <span class="arrow left"><a href="javascript:void(0);"><img src="http://media.peugeot.com/templates/peugeot/images/arrow-carrousel-left.png" width="15" height="34" alt="previous" /></a></span>
                                         <div class="carrouselProduit">
                                                                                             <div class="newListVehicule" data-id="132">
@@ -464,14 +356,14 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                                                     <span class="title"><span><span>Link MyPeugeot</span></span></span><img class="ico" src="http://media.peugeot.com/templates/peugeot/images/carrousel-right-arrow-white.png" alt=""/><!--</span>-->
                                                                 </a>
                                                             </div>
-                                                                                                                                                            </div>
+                                          </div>
                                                 <a class="prev" id="prev-132" href="/"></a>
                                                 <a class="next" id="next-132" href="/"></a>
-                                                                                    </div>
+                                  </div>
                 <!--																				<a href="javascript:void(0);"><span class="arrow right"></span><img src="/--><!--templates/peugeot/images/arrow-carrousel-right.png" width="15" height="34" alt="next" /></a>-->
                                     </div>
                                                             </div>
-                            <!--														                                                                                                                                                            <div class="meaGamme">
+                          <!--														                                                                                                                                                            <div class="meaGamme">
                                                                                                                                                                             <div class="content">
                                                                                                                                                                                             <p><a href="/" target=""></a></p>
                                                                                                                                                                             </div>
@@ -496,30 +388,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
             </div>
 
-                            <div class="lastActus">
-                    <div class="content">
-                        <div class="blockActus">
-                                                        
-                                <div class="title">See also</div>
-                                <div class="blockActusContent">
-                                    <div class="titleProduct">Cars</div>
-                                    <p>Peugeot’s expertise exemplified in its latest models</p>                                    <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target="">See Cars</a></div>
-                                </div>
-                                                    </div>
-
-                                                    <div class="discover">
-                                                                    <div class='mappmonde'></div>
-                                    <div class="discover-data-1">
-                                        <strong>Peugeot Cars</strong><br/>
-                                        in your country<br/>
-                                        <a class="discover-link" onclick="dataLayer.push({'event': 'uaevent', 'eventCategory': 'Link', 'eventAction': 'Redirection::kpp', 'eventLabel': 'Peugeot Cars::http://carros.peugeot.com.br/nossos-carros'});"
-                                           href="http://carros.peugeot.com.br/nossos-carros" target="_blank">
-                                            CONFIGURE                               
-                                        </a>
-                                    </div>
-                                                            </div>
-                                            </div>
-                </div>
+                            
                     </div>
                                 
             </div>
