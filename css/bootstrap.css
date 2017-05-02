@@ -706,29 +706,7 @@ a.thumbnail.active {
   float: left !important;
 }
 
-/*.fabio:hover {
-   content: url("../img/email_fabio.png");
-}
-*/
-/*.clovis:hover {
-   content: url('../img/email_clovis.png');
-}
 
-.araujo:hover {
-   content: url('../img/email_araujo.png');
-}
-
-.img4:hover {
-   content: url('../img/fotos/img04-2.jpg');
-}
-
-.img5:hover {
-   content: url('../img/fotos/img05-2.jpg');
-}
-
-.img6:hover {
-   content: url('../img/fotos/img06-2.jpg');
-}*/
 
 .contentFooter {
   border-top: 1px solid rgba(255,255,255,.5);

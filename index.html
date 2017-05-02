@@ -15,11 +15,13 @@
 	<meta name="generator" content="Peugeot" />
 	<title>MÚTUA</title>
     <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="./components/lightbox/css/lightbox.css" rel="stylesheet" type="text/css" />
 	<link href="./templates/peugeot/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<link href="./templates/peugeot/css/screen.css" rel="stylesheet" type="text/css" />
 	<link href="./components/com_peugeot/css/categorie.css" rel="stylesheet" type="text/css" />
 	<link href="./media/mod_languages/css/template.css" rel="stylesheet" type="text/css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./components/transition/jquery.transit.min.js" type="text/javascript"></script>
 	<script src="./components/com_peugeot/js/jquery.easing.1.3.js" type="text/javascript"></script>
 	<script src="./components/com_peugeot/js/jquery.caroufredsel.js" type="text/javascript"></script>
 	<script src="./components/com_peugeot/js/common.js" type="text/javascript"></script>
@@ -30,9 +32,10 @@
 	<script src="./media/system/js/core.js" type="text/javascript"></script>
 	<script src="./media/system/js/mootools-more.js" type="text/javascript"></script>
 	<script src="./media/jui/js/jquery.min.js" type="text/javascript"></script>
-	<script src="./media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="./media/jui/js/jquery-noconflict.js" type="text/javascript">j</script>
 	<script src="./media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
 	<script src="./media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+    
 	<script type="text/javascript">
 jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
 	</script>
@@ -188,7 +191,6 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 <div class="vehicules">
 <div class="center">
 <div class="products detail">
-
 <p><h2>PORTIFÓLIO fotos</h2>
 <p>Conheça alguns Trabalhos</p>
 <div class="englobCarrousel">
@@ -198,49 +200,51 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 <div class="carrouselProduit">
 <div class="newListVehicule" data-id="130">
 
-<div><img  src="./img/fotos/img01.jpg"/> <a href="/en/technology/connected-services"target="">
+<div>
+<a href="./img/fotos/img01-2-G.jpg" data-lightbox="galeria-fotos">
+<img  src="./img/fotos/img_01.jpg"/> 
 <span><span class="title"><span><span>RAMARIM</span></span></span></a>
 </div>	
-                                                    
+                                                 
 <div>
-<img  src="./img/fotos/img07.jpg"/>
-<a href="/en/technology/connected-services/peugeot-connect-sos">              
+<a href="./img/fotos/img07-2-G.jpg" data-lightbox="galeria-fotos"> 
+<img  src="./img/fotos/img_07.jpg"/>   
 <span class="title"><span><span>NATURA</span></span></span></a>
 </div>
                                                                                                             
 <div>
-<img src="./img/fotos/img08.jpg"/>
-<a href="/en/technology/connected-services/peugeot-connect-assistance">
+<a href="./img/fotos/img08-2-G.jpg" data-lightbox="galeria-fotos">
+<img src="./img/fotos/img_08.jpg"/>
 <span class="title"><span><span>GNT</span></span></a>
 </div>
                                                                                                             
 <div>
-<img  src="./img/fotos/img04.jpg"/>
-<a href="/en/technology/connected-services/peugeot-connect-apps">
+<a href="./img/fotos/img04-2-G.jpg" data-lightbox="galeria-fotos">
+<img  src="./img/fotos/img_04.jpg"/>
 <span class="title"><span><span>MORANA</span></span></span></a>
 </div>
                                                                                                             
-<div>
-<img  src="./img/fotos/img05.jpg"/>                                                                  
-<a href="/en/technology/connected-services/mirrorscreen">
+<div>                                                                  
+<a href="./img/fotos/img05-2-G.jpg" data-lightbox="galeria-fotos">
+<img  src="./img/fotos/img_05.jpg"/>
 <span class="title"><span><span>BIBI</span></span></span></a>
 </div>
                                                                                                             
 <div>
-<img  src="./img/fotos/img09.jpg"/>
-<a href="/en/technology/connected-services/scan-mypeugeot">
+<a href="./img/fotos/img09-2-G.jpg" data-lightbox="galeria-fotos">
+<img  src="./img/fotos/img_09.jpg"/>
 <span class="title"><span><span>BALÉ DA CIDADE</span></span></span></a>
 </div>
 
 <div>
-<img  src="./img/fotos/img03.jpg"/>
-<a href="/en/technology/connected-services/scan-mypeugeot">
+<a href="./img/fotos/img03-2-G.jpg" data-lightbox="galeria-fotos">
+<img  src="./img/fotos/img_03.jpg"/>
 <span class="title"><span><span>MORANA</span></span></span></a>
 </div>
 
-<div>
-<img  src="./img/fotos/img06.jpg"/>                                                                  
-<a href="/en/technology/connected-services/mirrorscreen">
+<div>                                              
+<a href="./img/fotos/img06-2-G.jpg" data-lightbox="galeria-fotos">
+<img  src="./img/fotos/img_06.jpg"/>
 <span class="title"><span><span>BIBI</span></span></span></a>
 </div>
                                                                                                             
@@ -289,7 +293,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                 <div class="blockActusContent">
                                     <div class="titleProduct">Marcas</div>
                                     <p>RAMARIM . NATURA . GNT . MORANA . BIBI . BALÉ DA CIDADE </p>                                    
-     <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target="">Fotos: Fabio Burtin</a></div>
+                                    <div><a href="mailto:contato@mutuafilmes.com.br">email : Mútua Filmes</a></div>
                                 </div>
                                                     </div>
 
@@ -313,12 +317,17 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                         <div class="vehicules">
                 <div class="center">
                 <div class="products detail">
- <p>               	
+ </p>  
+  </p>	
+   </p>
+     </p>
+                  	
 <h2>PORTIFÓLIO VÍDEOS</h2>
-<p>Rolo dos Diretores</p>  
-<br />                                                                  
+<p>Rolo dos Diretores<br><br>
+
+
 <iframe width="650" height="365" src="https://www.youtube.com/embed/g1Su8u7epec" frameborder="0" allowfullscreen></iframe>
-                                                            </div>
+                  </div>
                             <!--														                                                                                                                                                            <div class="meaGamme">
                                                                                                                                                                             <div class="content">
                                                                                                                                                                                             <p><a href="/" target=""></a></p>
@@ -348,18 +357,21 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                     <div class="content">
                         <div class="blockActus">
                                                         
-                                <div class="title">PRODUÇÕES</div>
-                                <div class="blockActusContent">
-                                    <div class="titleProduct">Marcas</div>
-                                    <p>RAMARIM . NATURA . GNT . MORANA . BIBI . BALÉ DA CIDADE </p>                                    
-     <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target="">Fotos: Fabio Burtin</a></div>
+                                <div></div>
+                                <div>
+                                    <div></div>
+                                    <p>
+                                    </p>     
+                                    
+                                                                       
+     <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target=""></a></div>
                                 </div>
                                                     </div>
 
-                                                    <div class="discover">
-                                                                    <div class='mappmonde'></div>
-                                    <div class="discover-data-1">
-                                        <strong><br/> <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
+                                                    <div>
+                                                                    <div</div>
+                                    <div>
+                                        <br/><br/>
                                                                      
                                         </a>
                                     </div>
@@ -378,17 +390,19 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
                                                                                                                                                                 <div class="products detail"><p>
                                 <h2>PROFISSIONAIS</h2>
-                                <p>Equipe MÚTUA</p>  
-
+                                <p>Equipe MÚTUA</p>
+                             
+	
                                                                                        
 
 <div class="englobCarrousel">
 
 <span class="arrow left"><a href="javascript:void(0);"><img src="http://media.peugeot.com/templates/peugeot/images/arrow-carrousel-left.png" width="15" height="34" alt="previous" /></a></span>
 
+
+
 <div class="carrouselProduit">
-<br>
-</p>
+
                 <!--																				<a href="javascript:void(0);"><span class="arrow right"></span><img src="/--><!--templates/peugeot/images/arrow-carrousel-right.png" width="15" height="34" alt="next" /></a>-->
                                     </div>
                                                             </div>
@@ -409,54 +423,101 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
 <div class="row">
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-6">
-                                        <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="row"><br>
+
+	
+                                    
                                             
                                            
                                             <div class="div_fabio col-md-3">
-                                                <img class="caras fabio" style="max-width: 100%; height: auto" src="./img/img_FABIO.png" />
+                                                <img class="caras fabio" style="max-width: 100%; height: auto" src="./img/imgfabio1.png" />
                                             </div>
                                             
+                                            
                                             <div class="div_clovis col-md-3">
-                                                <img class="caras clovis" style="max-width: 100%; height: auto" src="./img/img_CLOVIS.png" />
+                                                <img class="caras clovis" style="max-width: 100%; height: auto" src="./img/imgclovis1.png" />
                                             </div>
+
                                             <div class="div_araujo col-md-3">
-                                                <img class="caras araujo" style="max-width: 100%; height: auto" src="./img/img_ARAUJO.png" />
+                                                <img class="caras araujo" style="max-width: 100%; height: auto" src="./img/imgaraujo1.png" />                                               
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3"></div>
-                                </div>    
+                                </div> 
+                                   
 
 <Script type="text/JavaScript">
 
+
+
+
+
 $(".div_fabio").hover(
-    function(){
+       function(){
         $(".div_fabio").css("cursor", "pointer");
-        $(".fabio").css("content", "url(./img/img_FABIO2.png)");
+        $('.fabio').transition({opacity: 0, duration: 200});
+        window.setTimeout(function(){
+            $(".fabio").css("content", "url(./img/imgfabio2.png)");
+            window.setTimeout(function(){
+                $('.fabio').transition({opacity: 1, duration: 200});
+            }, 10)
+        }, 250)
     },
     function(){
-        $(".fabio").css("content", "url(./img/img_FABIO.png)");
+        $('.fabio').transition({opacity: 0, duration: 200});
+        window.setTimeout(function(){
+            $(".fabio").css("content", "url(./img/imgfabio1.png)");
+            window.setTimeout(function(){
+                $('.fabio').transition({opacity: 1, duration: 200});
+            }, 10)
+        }, 250)
     }
 );
 
 $(".div_clovis").hover(
     function(){
-        $(".div_fabio").css("cursor", "pointer");
-        $(".clovis").css("content", "url(./img/img_CLOVIS2.png)");
+        $(".div_clovis").css("cursor", "pointer");
+        $('.clovis').transition({opacity: 0, duration: 200});
+        window.setTimeout(function(){
+            $(".clovis").css("content", "url(./img/imgclovis2.png)");
+            window.setTimeout(function(){
+                $('.clovis').transition({opacity: 1, duration: 200});
+            }, 10)
+        }, 250)
+        
     },
     function(){
-        $(".clovis").css("content", "url(./img/img_CLOVIS.png)");
+        $('.clovis').transition({opacity: 0, duration: 200});
+        window.setTimeout(function(){
+            $(".clovis").css("content", "url(./img/imgclovis1.png)");
+            window.setTimeout(function(){
+                $('.clovis').transition({opacity: 1, duration: 200});
+            }, 10)
+        }, 250)
     }
 );
 
 $(".div_araujo").hover(
     function(){
-        $(".div_fabio").css("cursor", "pointer");
-        $(".araujo").css("content", "url(./img/img_ARAUJO2.png)");
+        $(".div_araujo").css("cursor", "pointer");
+        $('.araujo').transition({opacity: 0, duration: 200});
+        window.setTimeout(function(){
+            $(".araujo").css("content", "url(./img/imgaraujo2.png)");
+            window.setTimeout(function(){
+                $('.araujo').transition({opacity: 1, duration: 200});
+            }, 10)
+        }, 250)
     },
     function(){
-        $(".araujo").css("content", "url(./img/img_ARAUJO.png)");
+        $('.araujo').transition({opacity: 0, duration: 200});
+        window.setTimeout(function(){
+            $(".araujo").css("content", "url(./img/imgaraujo1.png)");
+            window.setTimeout(function(){
+                $('.araujo').transition({opacity: 1, duration: 200});
+            }, 10)
+        }, 250)
     }
 );
 
@@ -484,12 +545,14 @@ $(".div_araujo").hover(
                             <div class="lastActus">
                     <div class="content">
                         <div class="blockActus">
+                        
                                                         
-                                <div class="title">PRODUÇÕES</div>
+                                <div class="title">integrantes</div>
+                                
                                 <div class="blockActusContent">
-                                    <div class="titleProduct">Marcas</div>
-                                    <p>RAMARIM . NATURA . GNT . MORANA . BIBI . BALÉ DA CIDADE </p>                                    
-     <div class="link left"><a data-ua="link--Internal--See Cars" href="/en/products-services#cars" target="">Fotos: Fabio Burtin</a></div>
+                                    <div class="titleProduct">Mutueiros</div>
+                                    <p>FABIO BURTIN . CLÓVIS GHIORZI . C. ARAÚJO</p>                                    
+                                     <div><a href="mailto:contato@mutuafilmes.com.br">email : Mútua Filmes</a></div>
                                 </div>
                                                     </div>
 
@@ -551,24 +614,7 @@ $(".div_araujo").hover(
     <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'https://plus.google.com/+peugeot'}); taggage('/clic_footer_partage-google');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'https://plus.google.com/+peugeot'}); taggage('/clic_footer_partage-google');" class="info" href="https://plus.google.com/+peugeot" rel="publisher" target="_blank"><span class="little">Google +</span></a></li>
     <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.pinterest.com/peugeotofficial'}); taggage('/clic_footer_partage-pinterest');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.pinterest.com/peugeotofficial'}); taggage('/clic_footer_partage-pinterest');" class="info" href="http://www.pinterest.com/peugeotofficial" target="_blank"><span class="little">Pinterest</span></a></li>
     <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.instagram.com/peugeot'}); taggage('/clic_footer_partage-instagram');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.instagram.com/peugeot'}); taggage('/clic_footer_partage-instagram');" class="info" href="http://www.instagram.com/peugeot" target="_blank" class="info"><span class="little">Instagram</span></a></li>
-</ul><div class="mod-languages">
-
-	<ul class="lang-inline">
-						<li class="" dir="ltr">
-			<a href="/es">
-							ES						</a>
-			</li>
-								<li class="lang-active" dir="ltr">
-			<a href="/en/technology">
-							EN						</a>
-			</li>
-								<li class="" dir="ltr">
-			<a href="/fr">
-							FR						</a>
-			</li>
-				</ul>
-
-</div>
+</ul>
 </div>
 										<br class="clear"/>
 								</div>
@@ -578,5 +624,10 @@ $(".div_araujo").hover(
 		</div>
 		<input type="hidden" id="languageSite" value="en" />
 		<!-- Monitoring -->
+        <script src="./components/lightbox/js/lightbox.js"></script>
+        <script>
+            lightbox.option({
+            })
+        </script>
 </body>
 </html>

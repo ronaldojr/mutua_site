@@ -1023,7 +1023,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#5b5b5b, Direction=90, Str
 .layer-importateur .conteneur {width: 400px;margin: 0 auto;}
 .layer-importateur .close{
     position: absolute;
-    top: 20px;
+    top: 15px;
     height: 16px;
     width: 16px;
     right: 20px;
