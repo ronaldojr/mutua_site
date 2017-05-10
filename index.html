@@ -300,8 +300,10 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                                     <div class="discover">
                                                                     <div class='mappmonde'></div>
                                     <div class="discover-data-1">
-                                        <strong><br/> <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
-                               
+                                        <strong><br/> 
+                                        <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo">
+                                            <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
+                                        </a>
                                         </a>
                                     </div>
                                                             </div>
@@ -559,8 +561,10 @@ $(".div_araujo").hover(
                                                     <div class="discover">
                                                                     <div class='mappmonde'></div>
                                     <div class="discover-data-1">
-                                         <strong><br/> <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
-                                                                  
+                                         <strong><br/> 
+                                        <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo">    
+                                            <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
+                                        </a>
                                         </a>
                                     </div>
                                                             </div>
@@ -585,12 +589,39 @@ $(".div_araujo").hover(
 						<div id="footer">
 								<div class="contentFooter">
 										<ul class="menu_blcF">
-<li class="item-184 deeper parent"><a style="margin-left: 70px" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Footer','eventAction': 'Navigation::level1','eventLabel': 'International sites'});"
-        class="puce" href="javascript:;" >Parceiros</a><ul class="nav-child unstyled small"><li style="margin-left: 60px" class="item-185">
-            
-        <img  src="./img/logoTecnologiaLivre.png">
+<li class="deeper parent"><a style="width: 100%;margin-left: 70px;" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Footer','eventAction': 'Navigation::level1','eventLabel': 'International sites'});"
+        class="puce" href="javascript:;" >Produção de Logomarcas:</a><ul class="nav-child unstyled small logomarcas" style="width: 100%;">
+        <li  class="logo-1" style="">
+            <a href="./img/logos/TecnologiaLivre.jpg" data-lightbox="galeria-logos">
+                <img  class='logo-1-img' src="./img/logos/logoP01_tecnologialivre_bot1.png">
+            </a>
+        </li>
+        <li  class=" logo-2" style="margin-left: 20px">
+            <a href="./img/logos/2Benditos.jpg" data-lightbox="galeria-logos">
+                <img  class='logo-2-img' src="./img/logos/logoP02_2Benditos_bot1.png">
+            </a>
+        </li>
+        <li  class=" logo-3" style="margin-left: 60px">
+            <a href="./img/logos/IleAlafia.jpg" data-lightbox="galeria-logos">
+                <img  class='logo-3-img' src="./img/logos/logoP03_IleAlafia_bot1.png">
+            </a>
+        </li>
+        <li  class="logo-4" style="margin-left: -20px">
+            <a href="./img/logos/Mojuba.jpg" data-lightbox="galeria-logos">
+                <img  class='logo-4-img' src="./img/logos/logoP04_Mojuba_bot1.png">
+            </a>
+        </li>
+        <li  class=" logo-5" style="margin-left: 35px">
+            <a href="./img/logos/Banda.jpg" data-lightbox="galeria-logos">
+                <img  class='logo-5-img' src="./img/logos/logoP05_Banda_bot1.png">
+            </a>
+        </li>
+    
+        </ul>
+</li>
 
-        </li><li class="item-185"><img src="./img/logo2benditos.png"></li></ul></li></ul>
+
+        </ul>
 
 										<div class="menuRight"><ul class="blcFR ">
     <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.facebook.com/peugeot'}); taggage('/clic_footer_partage-facebook');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.facebook.com/peugeot'}); taggage('/clic_footer_partage-facebook');" class="info" href="http://www.facebook.com/peugeot" target="_blank"><span class="big">Facebook</span></a></li>
@@ -614,5 +645,70 @@ $(".div_araujo").hover(
             lightbox.option({
             })
         </script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    var imagem1 = new Image();
+    imagem1.src = "./img/logos/logoP01_tecnologialivre.png"
+    var imagem2 = new Image();
+    imagem2.src = "./img/logos/logoP02_2Benditos.png"
+    var imagem3 = new Image();
+    imagem3.src = "./img/logos/logoP03_IleAlafia.png"
+    var imagem4 = new Image();
+    imagem4.src = "./img/logos/logoP04_Mojuba.png"
+    var imagem5 = new Image();
+    imagem5.src = "./img/logos/logoP05_Banda.png"
+    console.log("rodeo"+imagem1)
+});
+
+    $('.logo-1').hover(
+        function(){
+            $('.logo-1-img').css('content', "url(./img/logos/logoP01_tecnologialivre.png)");
+        },
+        function(){
+            $('.logo-1-img').css('content', "url(./img/logos/logoP01_tecnologialivre_bot1.png)")
+        }
+    )
+
+    $('.logo-2').hover(
+        function(){
+            $('.logo-2-img').css('content', "url(./img/logos/logoP02_2Benditos.png)");
+        },
+        function(){
+            $('.logo-2-img').css('content', "url(./img/logos/logoP02_2Benditos_bot1.png)")
+        }
+    )
+
+    $('.logo-3').hover(
+        function(){
+            $('.logo-3-img').css('content', "url(./img/logos/logoP03_IleAlafia.png)");
+        },
+        function(){
+            $('.logo-3-img').css('content', "url(./img/logos/logoP03_IleAlafia_bot1.png)")
+        }
+    )
+
+    $('.logo-4').hover(
+        function(){
+            $('.logo-4-img').css('content', "url(./img/logos/logoP04_Mojuba.png)");
+        },
+        function(){
+            $('.logo-4-img').css('content', "url(./img/logos/logoP04_Mojuba_bot1.png)")
+        }
+    )
+
+    $('.logo-5').hover(
+        function(){
+            $('.logo-5-img').css('content', "url(./img/logos/logoP05_Banda.png)");
+        },
+        function(){
+            $('.logo-5-img').css('content', "url(./img/logos/logoP05_Banda_bot1.png)")
+        }
+    )
+
+</script>
+
+
 </body>
 </html>

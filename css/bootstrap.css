@@ -723,6 +723,9 @@ a.thumbnail.active {
   .div_fabio {
     margin-left: -45px;
   }
+  .logomarcas{
+    margin-left: 180px;
+  }
 
 }
 
@@ -732,5 +735,8 @@ a.thumbnail.active {
   }
   .caras_container {
     margin-top: -85px;
+  }
+  .logomarcas{
+    margin-left: 485px;
   }
 }
