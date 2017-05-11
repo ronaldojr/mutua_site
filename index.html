@@ -130,17 +130,88 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 												</div>
 										</div>
 								</li>  
-								<li class="search">
-                                    <a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'SEARCH'});" href="javascript:void(0);" class="searchTool">QUEM SOMOS?</a>
-                                    <form id="rechercherDansSite" action="/en/search" method="get">		
+
+
+                                <script type="text/javascript">
+
+
+
+                                    $(".first").on("click", function(){
+                                        $(".second").removeClass("hovered");
+                                        $(".second-fazemos").removeClass("hovered");
+                                        $("#navMenu3").fadeOut("fast");
+                                        $("#navMenu2").fadeOut("fast");
+                                    })
+                                </script>
+								
+                                <li class="second" style="width: 200px; "><a style="background-image: url('')" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'Menu'});"
+                                                                        href="javascript:void(0);" onClick="taggage('/clic_header-menu');">Quem Somos?</a>
+                                        <div id="navMenu2" class="globalMenu">
+                                                <div class="containerMenu">
+                                                    <div class="contentMenu">
+                                                        <div class="subMenu">
+                                                            teste 2
+                                                        </div>
+                                                    </div>      
+                                                </div>
+                                        </div>
+                                </li> 
+
+                                <script type="text/javascript">
+
+                                    $(window).click(function() {
+                                    //Hide the menus if visible
+                                    });
+
+                                    $(".second").on("click", function(e){
+                                        if ($("#navMenu2").is(":visible")) {
+                                            $("#navMenu2").fadeOut("fast");
+                                            $(this).removeClass("hovered");
+                                        } else {
+                                            $(".first").removeClass("hovered");
+                                            $(".second-fazemos").removeClass("hovered");
+                                            $(this).addClass("hovered");
+                                            $("#navMenu3").fadeOut("fast");
+                                            $("#navMenu").fadeOut("fast");
+                                            $("#navMenu2").fadeIn("fast");
+                                            e.stopPropagation();
+                                        }
                                         
-                                        <input type="text" id="search" name="q" placeholder="Your search" autocomplete="off">
-                                        <button type="submit">Ok</button>
-                                    </form>
-								</li>
-                                <li class="mappemonde">
-                                    <a id="searchMap" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'PEUGEOT IN YOUR COUNTRY'});" class="map" href="javascript:void(0);"  onClick="taggage('/clic_header-boussole');">O QUE FAZEMOS?</span></a>
+                                    })
+                                </script>
+
+
+
+                                <li class="second second-fazemos"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'Menu'});"
+                                                                        href="javascript:void(0);" onClick="taggage('/clic_header-menu');">O que fazemos?</a>
+                                        <div id="navMenu3" class="globalMenu">
+                                                <div class="containerMenu">
+                                                    <div class="contentMenu">
+                                                        <div class="subMenu">
+                                                            teste 3
+                                                        </div>
+                                                        
+                                                    </div>      
+                                                </div>
+                                        </div>
                                 </li>
+
+                                <script type="text/javascript">
+                                    $(".second-fazemos").on("click", function(e){
+                                        if ($("#navMenu3").is(":visible")) {
+                                            $("#navMenu3").fadeOut("fast");
+                                            $(this).removeClass("hovered");
+                                        } else {
+                                            $(".first").removeClass("hovered");
+                                            $(".second").removeClass("hovered");
+                                            $(this).addClass("hovered");
+                                            $("#navMenu2").fadeOut("fast");
+                                            $("#navMenu").fadeOut("fast");
+                                            $("#navMenu3").fadeIn("fast");
+                                            e.stopPropagation();
+                                        }
+                                    })
+                                </script> 
                               
 						</ul>
 						<div class="globalMenu">
@@ -171,7 +242,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
             <img class="bgSize" src="img/fundo01.jpg" alt="background" width="1920"/>
             <div class="menuCat">
                 <div class="center">
-                    <h1><img src="img/LOGO_FundoTransparente.png" width="341" height="107"></h1>					
+                    <h1><a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo1"><img src="img/LOGO_FundoTransparente.png" width="341" height="107"></a></h1>					
            <ul class="listeProduits">
                   </ul>
               </div>
@@ -300,11 +371,11 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                                     <div class="discover">
                                                                     <div class='mappmonde'></div>
                                     <div class="discover-data-1">
-                                        <strong><br/> 
-                                        <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo">
-                                            <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
+                                        <br/> 
+                                        <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo-2">
+                                            <img src= "img/logo_paginas.png"width="120" /></strong><br/>
                                         </a>
-                                        </a>
+                                        
                                     </div>
                                                             </div>
                                             </div>
@@ -561,11 +632,11 @@ $(".div_araujo").hover(
                                                     <div class="discover">
                                                                     <div class='mappmonde'></div>
                                     <div class="discover-data-1">
-                                         <strong><br/> 
-                                        <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo">    
-                                            <img src= "img/logo_paginas.png"width="120" height="38" alt="Accueil Peugeot.com " class="sloganlogo"  nopin="nopin"/></strong><br/>
+                                         <br/> 
+                                        <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo-3">    
+                                            <img src= "img/logo_paginas.png"width="120" height="38" /><br/>
                                         </a>
-                                        </a>
+                                        
                                     </div>
                                                             </div>
                                             </div>
@@ -589,8 +660,8 @@ $(".div_araujo").hover(
 						<div id="footer">
 								<div class="contentFooter">
 										<ul class="menu_blcF">
-<li class="deeper parent"><a style="width: 100%;margin-left: 70px;" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Footer','eventAction': 'Navigation::level1','eventLabel': 'International sites'});"
-        class="puce" href="javascript:;" >Produção de Logomarcas:</a><ul class="nav-child unstyled small logomarcas" style="width: 100%;">
+<li class="deeper parent"><a style="width: 100%;margin-left: 20px;" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Footer','eventAction': 'Navigation::level1','eventLabel': 'International sites'});"
+        class="puce" href="javascript:;" >Produção de Logomarcas <img class="arrow-up-class" style="width: 25px; height: 25px; margin-bottom: -9px" src="./img/arrow-up.png"/></a><ul class="nav-child unstyled small logomarcas" style="width: 100%;">
         <li  class="logo-1" style="">
             <a href="./img/logos/TecnologiaLivre.jpg" data-lightbox="galeria-logos">
                 <img  class='logo-1-img' src="./img/logos/logoP01_tecnologialivre_bot1.png">
@@ -648,6 +719,13 @@ $(".div_araujo").hover(
 
 <script type="text/javascript">
 
+$(window).click(function(e) {
+    $("#navMenu3").fadeOut("fast");
+    $("#navMenu2").fadeOut("fast");
+    $(".second").removeClass("hovered");
+    $(".second-fazemos").removeClass("hovered");
+});
+
 $(document).ready(function(){
     var imagem1 = new Image();
     imagem1.src = "./img/logos/logoP01_tecnologialivre.png"
@@ -661,6 +739,34 @@ $(document).ready(function(){
     imagem5.src = "./img/logos/logoP05_Banda.png"
     console.log("rodeo"+imagem1)
 });
+
+
+$(".puce").click(function(){
+    var transform = $('.arrow-up-class').css( "transform")
+    // if (transform === 'matrix(1, 0, 0, 1, 0, 0)') {
+    //     $('.arrow-up-class').css( "transform", 'rotate(0deg)')
+    // } else {
+    //     $('.arrow-up-class').css( "transform", 'rotate(180deg)')
+    // }
+    if (transform == 'none') {
+        $('.arrow-up-class').css( "transform", 'rotate(+180deg)')
+    }
+    
+    if (transform == 'matrix(1, 0, 0, 1, 0, 0)') {
+        $('.arrow-up-class').css( "transform", 'rotate(+180deg)')
+    }
+
+    if (transform == 'matrix(-1, 1.22465e-16, -1.22465e-16, -1, 0, 0)') {
+        $('.arrow-up-class').css( "transform", 'rotate(0deg)')
+    }
+
+    console.log(transform)
+
+})
+
+
+
+
 
     $('.logo-1').hover(
         function(){
