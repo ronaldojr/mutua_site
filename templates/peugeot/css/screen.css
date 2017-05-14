@@ -65,7 +65,7 @@ width: 100%;clear: both;}
 .guideOn .close{background: url("../../../templates/peugeot/images/bgd-sprite-picto.png") no-repeat scroll right -124px transparent;cursor: pointer; display: block;width: 30px;height:30px; position: fixed;right: 20px;top: 20px; }
 
 .guideOn{position:fixed;top:0;left:0;z-index:110;padding:0;display:block;width:465px;height: 280px}
-.guideOn p{min-height:64px;color:#ffffff;font-family:'PeugeotNormal'; font-size:45px;text-transform:uppercase;text-align: center;}
+.guideOn p{min-height:64px;color:#ffffff;font-family:'PeugeotNormal'; font-size:45px;text-align: center;}
 .guideOn p span{display:block;color:#ffffff;font-family:'PeugeotBold'; font-size:45px;letter-spacing:9px;}
 .guideOn p.description{min-height:16px;color:#ffffff;font-family:'PeugeotItalic'; font-size:18px;text-align:center;text-transform:none;padding:12px 0 20px 0;}
 .guideOn ul{overflow:hidden;display:block;margin:0;padding: 0 0 0 45px;}
@@ -150,14 +150,14 @@ top: 119px;
 
 #header	.globalMenu .containerMenu{background-color:#FFFFFF; height: 86px;}
 #header	.globalMenu .containerMenu .none{display:none;}
-#header	.globalMenu .containerMenu .contentMenu{width: 1000px;margin: 0 auto;padding-top:18px;}
+#header	.globalMenu .containerMenu .contentMenu{width: 1000px;margin: 0 ;padding-top:18px;}
 #header .globalMenu .containerMenu .subMenu { float: left; height: 50px; padding-right:27px;position:relative;}
-#header .globalMenu .containerMenu .subMenu img {position: absolute;top: 17px;left: 135px; float: left;}
+#header .globalMenu .containerMenu .subMenu img {position: absolute;top: 17px;left: 0px; float: left;}
 #header .globalMenu .containerMenu .subMenu.emotion img {position: absolute;top: 17px;left: 145px; float: left;}
 #header .globalMenu .containerMenu .subMenu .wrap-inner img {left: 92px;}
 #header .globalMenu .containerMenu .subMenu.active {padding-right:0;}
 #header .globalMenu .containerMenu .subMenu.active img{ display: none;}
-#header .globalMenu .containerMenu .subMenu:last-child{border-left: 1px solid #d5d5d5;margin-left: 40px;padding-left: 40px;}
+#header .globalMenu .containerMenu .subMenu:last-child{border-left: 1px solid #d5d5d5;margin-left: 10px;padding-left: 0px;}
 #header .globalMenu .containerMenu .subMenu a { margin: 0; padding: 0; }
 #header .globalMenu .containerMenu .subMenu .btn-open { font-family: PeugeotLight; display: block; float: left; font-size: 14px; color: #5b5b5b; text-align: center; margin:0; padding-top:8px; height:41px;}
 #header .globalMenu .containerMenu .subMenu .btn-open span { font-family: PeugeotBold; display: block; font-size: 20px; }
@@ -179,7 +179,7 @@ top: 119px;
 
 
 /* NAV HEADER DEROULEE */
-#header #navMenu ul{overflow:hidden;float:left; padding: 11px 0 10px 30px;}
+#header #navMenu ul{overflow:hidden;float:left; padding: 11px 0 10px 10px;}
 #header #navMenu ul li{width: auto;float:left; border-right: 1px solid #d5d5d5; display:block;margin:0;font-family:'PeugeotLight';text-transform: capitalize;}
 #header #navMenu ul li:last-child{border: none;}
     #header #navMenu ul .item-210, #header #navMenu ul .item-179{border: none;}
@@ -445,7 +445,7 @@ top: 119px;
 #footer .blcActualite p{display:block;width:105px;margin:0 auto;padding:10px 0;text-align:center;background:url("../images/bgd-sprite-arrow.png") no-repeat 0px 50px;}
 #footer .blcActualite a{text-transform:uppercase;font-family:'PeugeotNormal';font-size:16px;color:#777777;text-decoration:none;}
 
-#footer .contentFooter{width:100%;min-height:34px;background: url("../images/bg-footer.png") 0 0 repeat-x;vertical-align:middle;background-color: rgba(0,0,0,.5);}
+#footer .contentFooter{width:100%;min-height:34px;background: url("../images/bg-footer.png") 0 0 repeat-x;vertical-align:middle;background-color: rgba(0,0,0,.9);}
 #footer .contentFooter ul{margin-top:6px;}
 #footer .contentFooter ul li{list-style-type:none;float:left;}
 #footer .contentFooter ul.blcFR li{padding:0 0 0 14px;}

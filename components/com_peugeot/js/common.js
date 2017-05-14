@@ -706,49 +706,7 @@ function getCookieExpireDate() {
 }
 
 // Cette fonction est appelée pour afficher la demande de consentement
-function askConsent() {
-    var bodytag = document.getElementsByTagName('body')[0];
-    var div = document.createElement('div');
-    div.setAttribute('id', 'cookie-banner');
-    // div.setAttribute('width','70%');
 
-    // Vous pouvez modifier le contenu ainsi que le style
-	var tempLang = $('.lang-inline li.lang-active a').text().trim();
-	if (tempLang === "EN") {
-    div.innerHTML = '<div class="cookie">\n\
-<p>By continuing your visit on this website, you accept the use of cookies to compile visitor statistics and offer you content adapted to your interests. <a target="blank" href="/en/private">To find out more and configure your cookies.</a></p><div class="close"><a id="closeCookie"></a></div></div></div>';
-	}
-	else if (tempLang === "ES") {
-    div.innerHTML = '<div class="cookie">\n\
-<p>Al continuar la navegación en este sitio web, consideramos que acepta el uso de cookies para obtener datos estadísticos de los usuarios y ofrecerle contenidos adaptados a sus intereses. <a target="blank" href="es/vida-privada">Para más información y para la configuración de las cookies.</a></p><div class="close"><a id="closeCookie"></a></div></div></div>';
-	}
-	else {
-    div.innerHTML = '<div class="cookie">\n\
-<p>En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation des cookies pour r&eacute;aliser des statistiques d\'audiences et vous proposer des contenus adapt&eacute;s &agrave; vos centres d\'int&eacute;r&ecirc;ts. <a target="blank" href="/fr/private">Pour en savoir plus et param&eacute;trer vos cookies.</a></p><div class="close"><a id="closeCookie"></a></div></div></div>';
-	}
-     //bodytag.insertBefore(div,bodytag.firstChild);
-     
-    // Ajoute la bannière juste au début de la page
-    /*  document.getElementsByTagName('body')[0].className+=' cookiebanner';
-     
-     $('#cookie-banner .close').on('click', function(){
-     
-     $("#cookie-banner").hide();
-     $("body.cookiebanner").removeClass("cookiebanner");
-     document.cookie = 'hasConsent=true; '+ getCookieExpireDate() +' ; path=/';
-     });;*/
-   document.getElementsByTagName('body')[0].className += ' cookiebanner';
-    $('#header')
-            .prepend(div)
-            
-                $('#cookie-banner .close').on('click', function(){
-                $("#cookie-banner").hide();
-                $("body.cookiebanner").removeClass("cookiebanner");
-                document.cookie = 'hasConsent=true; ' + getCookieExpireDate() + ' ; path=/';
-                $('div#subLogo').addClass("subLogo-cookie-validate");
-            })
-
-}
 
 
 // Retourne la chaine de caractère correspondant à nom=valeur
