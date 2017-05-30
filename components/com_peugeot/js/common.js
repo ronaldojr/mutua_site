@@ -177,7 +177,9 @@ $(function() {
     });
     $("#footer .contentFooter .menu_blcF .deeper > a").each(function(a) {
         var b = $("#footer .contentFooter .menu_blcF .deeper ul"), c = 250;
-        $(this).on('click touchstart', function() {
+        $(this).on('click touchstart', function(e) {
+            console.log("achei");
+            $('.arrow_up_class').toggleClass("girar");
             var d = $("#footer .contentFooter .menu_blcF .deeper > ul:eq(" + a + ")");
             $(".globalMenu , #opacityBox").hide();
             if (d.is(":visible")) {
@@ -199,6 +201,7 @@ $(function() {
             }
             $('#actualites').trigger('close');
             $('.btnActualite').find('img').removeClass('active');
+            e.preventDefault();
         })
     });
     $(".mappemonde li a").removeClass("blue");

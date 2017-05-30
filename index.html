@@ -18,7 +18,10 @@
     <link href="./templates/peugeot/css/screen.css" rel="stylesheet" type="text/css" />
     <link href="./components/com_peugeot/css/categorie.css" rel="stylesheet" type="text/css" />
     <link href="./media/mod_languages/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="./css/flickity.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/flickity.pkgd.min.js" type="text/javascript"></script>
     <script src="./components/transition/jquery.transit.min.js" type="text/javascript"></script>
     <script src="./components/com_peugeot/js/jquery.easing.1.3.js" type="text/javascript"></script>
     <script src="./components/com_peugeot/js/jquery.caroufredsel.js" type="text/javascript"></script>
@@ -33,25 +36,13 @@
     <script src="./media/jui/js/jquery-noconflict.js" type="text/javascript">j</script>
     <script src="./media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="./media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/mobileMenu.js" type="text/javascript"></script>
     
     <script type="text/javascript">
 jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
     </script>
 
-        <meta id="viewport" name='viewport'>
-        
-        
-        
-        <script>
-                (function(doc) {
-                        if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
-                                doc.getElementById("viewport").setAttribute("content", "initial-scale=0.3, user-scalable=no");
-                        } else if ( navigator.userAgent.match(/iPad/i) ||  navigator.userAgent.match(/Android/) ) {
-                                doc.getElementById("viewport").setAttribute("content", "width=device-width,initial-scale=1.0, user-scalable=no");
-                        }
-                }(document));
-        </script>
-
+        <meta name='viewport' content="initial-scale=1">
         <meta name="google-site-verification" content="5zgbQShUPCVBjwSAyjePlrKNoZrduIARBEBMvz-y_ns" />
         <meta name="google-site-verification" content="cfWiCIj_qUXfvllAB3-AeRE2logLix68O6LgUP6Ngys" />
 
@@ -91,10 +82,65 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
         <div id="main">
                 
                 <div id="header">
-                        <div class="logo"><a>
+                <div id="pattern_menu">
+                    <div id="icone_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav id="menu" role="navigation">
+                        <ul class="slideNav menu_mobile_sumir">
+                            <li><a id="menu_top_sumir" class="link_mainProduits" href="javascript:void(0);">Topo</a></li>
+                            <li><a id="menu_fotos_sumir" class="link_engines" href="javascript:void(0);">Fotos</a></li>
+                            <li><a id="menu_videos_sumir" class="link_safety" href="javascript:void(0);">Vídeos</a></li>
+                            <li><a id="menu_equipe_sumir" class="link_connected-services" href="javascript:void(0);">Equipe</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="link_360" href="#modal">360&deg;VR</a></li>
+                            <li><a class="link_quem" href="#modal_quem">Quem somos?</a></li>
+                            <li><a class="link_oque" href="#modal_oque">O que fazemos?</a></li>
+                        </ul>
+                    </nav>
+                </div>
                         
- <img style="max-width: 100%; height: auto;" src= "img/LOGO_Pmutua.png" width="105" height="49" alt="" class="sloganlogo"  nopin="nopin"/><img style="max-width: 100%; height: auto; margin-left: -15px;" src= "img/imgFRASE.png"  ALIGN=LEFT width="500" height="20" alt="Motion & Emotion" class="sloganlogo texte"  nopin="nopin"/> </a>
-                        </div>
+                        
+<div class="parte_direta_topo">
+     <img src= "img/LOGO_Pmutua.png" class="logo_pequeno" />
+     <img src= "img/imgFRASE.png" class="texto_topo" />
+     <img src= "img/360_bot01.png"  class="imagem_360"  />
+     <div class="barra_360">
+         <img style="float: left; margin-left: 50px; margin-top: 5px;" src="./img/LOGO_BARRA-BRANCA.png" />
+         <div class="texto-quem-somos" style="float: left; padding-top: 28px; margin-left: 30px; text-align: left; font-family: Calibri" >
+           <div style="font-size: 0.9em; text-transform: uppercase; ">
+                Entre em contato para se informar sobre a plataforma 360&deg;VR <a style="color: #F00;" href="mailto:contato@mutuafilmes.com.br">contato@mutuafilmes.com.br</a> <br>ou pelo telefone: 55 11 993188568 / Fabio Burtin. 
+            </div>
+        </div>
+     </div>
+      <script type="text/javascript">
+          $(window).click(function() {
+            //Hide the menus if visible
+            });
+          $('.imagem_360').on('click', function(e) {
+            
+            if ($('.barra_360').is(':visible')) {
+                $('.barra_360').fadeOut("fast");
+            } else {
+                $(".first").removeClass("hovered");
+                $(".second").removeClass("hovered");
+                $(".second-fazemos").removeClass("hovered");
+                $('.barra_360').fadeIn('fast');
+                $("#navMenu").fadeOut("fast");
+                $("#navMenu3").fadeOut("fast");
+                $("#navMenu2").fadeOut("fast");
+                e.stopPropagation();
+            }
+
+            
+          })
+
+      </script>
+</div>
+                        
                         <ul class="headerContRight">
                                                             <li class="first"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Top bar','eventAction': 'Navigation' ,'eventLabel': 'Menu'});"
                                                                         href="javascript:void(0);" onClick="taggage('/clic_header-menu');">Menu</a>
@@ -104,7 +150,6 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                                     <div class="contentMenu">
                                                         <div class="subMenu">
                                                             <div class="wrap-inner">
-                                                                <!-- <a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'HomeNav','eventAction':'Header','eventLabel':'Motion'})" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'HomeNav','eventAction':'Header','eventLabel':'Motion'})" class="btn-open" href="/">Go with <span>motion<span class="border"></span></span><img src="http://media.peugeot.com/templates/peugeot/images/arrow-menu-header.png"/></a> -->
                                                                 <ul class="menu slideNav">
 <li class="item-101 default"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Accueil'})"
         class="none" href="/en" >Accueil</a></li>
@@ -116,12 +161,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
                                                             </div>
                                                         </div>
-                                                        <!-- <div class="subMenu emotion">
-                                                            <a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'HomeNav','eventAction':'Header','eventLabel':'Emotion'})" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'HomeNav','eventAction':'Header','eventLabel':'Emotion'})" class="btn-open" href="/">Go with <span>Emotion<span class="border"></span></span><img src="http://media.peugeot.com/templates/peugeot/images/arrow-menu-header.png"/></a>
-                                                            <ul class="menu">
-<li class="item-250"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Listen'});" href="/en/listen" >Listen</a></li><li class="item-251"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Experiment'});" href="/en/experiment" >Experiment</a></li><li class="item-252"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Feel'});" href="/en/feel" >Feel</a></li><li class="item-253"><a onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Header','eventAction': 'Navigation::level2','eventLabel': 'Watch'});" href="/en/watch" >Watch</a></li></ul>
-
-                                                        </div> -->
+                                                      
                                                     </div>      
                                                 </div>
                                         </div>
@@ -135,6 +175,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                     $(".first").on("click", function(){
                                         $(".second").removeClass("hovered");
                                         $(".second-fazemos").removeClass("hovered");
+                                        $("barra_360").fadeOut("fast");
                                         $("#navMenu3").fadeOut("fast");
                                         $("#navMenu2").fadeOut("fast");
                                     })
@@ -167,6 +208,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                             $(".first").removeClass("hovered");
                                             $(".second-fazemos").removeClass("hovered");
                                             $(this).addClass("hovered");
+                                            $("barra_360").fadeOut("fast");
                                             $("#navMenu3").fadeOut("fast");
                                             $("#navMenu").fadeOut("fast");
                                             $("#navMenu2").fadeIn("fast");
@@ -199,6 +241,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                             $(".first").removeClass("hovered");
                                             $(".second").removeClass("hovered");
                                             $(this).addClass("hovered");
+                                            $("barra_360").fadeOut("fast");
                                             $("#navMenu2").fadeOut("fast");
                                             $("#navMenu").fadeOut("fast");
                                             $("#navMenu3").fadeIn("fast");
@@ -208,21 +251,12 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                 </script> 
                               
                         </ul>
-                        <div class="globalMenu">
-
-                            <div id="globalMenu"></div>
-                        </div>
+                        
                         <br class="clear" />
-                            <div id="breadcrumb">
-        <div class="lienNavHeader">
-            <div class="breadcrumbs">
-                                <a href="/en" class="pathway"></a>  <span></span>           </div>
-        </div>
-            </div>
+                            
 
                 </div>
-                <div id="system-message-container">
-    </div>
+                
 
 
                 
@@ -236,7 +270,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
             <img class="bgSize" src="img/fundo01.jpg" alt="background" width="1920"/>
             <div class="menuCat">
                 <div class="center">
-                    <h1><a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo1"><img src="img/LOGO_FundoTransparente.png" width="341" height="107"></a></h1>                    
+                    <h1><a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo1"><img class="logo_barra_topo" src="img/LOGO_FundoTransparente.png" ></a></h1>                    
            <ul class="listeProduits">
                   </ul>
               </div>
@@ -256,8 +290,12 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 <div class="vehicules">
 <div class="center">
 <div class="products detail">
-<p><h2>PORTIFÓLIO fotos</h2>
-<p>Conheça alguns Trabalhos</p>
+<p>
+<br class="aparecer">
+<br class="aparecer">
+<h2 class="titulo_secao">PORTIFÓLIO fotos: Fabio Burtin</h2><br>
+
+
 <div class="englobCarrousel">
 
 <span class="arrow left"><a href="javascript:void(0);"><img src="./img/arrow-carrousel-left.png" width="15" height="34" alt="previous" /></a></span>
@@ -267,49 +305,49 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
 <div>
 <a href="./img/fotos/img01-2-G.jpg" data-lightbox="galeria-fotos">
-<img  src="./img/fotos/img_01.jpg"/> 
+<img  src="./img/fotos/img1.jpg"/> 
 <span><span class="title"><span><span>RAMARIM</span></span></span></a>
 </div>  
                                                  
 <div>
 <a href="./img/fotos/img07-2-G.jpg" data-lightbox="galeria-fotos"> 
-<img  src="./img/fotos/img_07.jpg"/>   
+<img  src="./img/fotos/img7.jpg"/>   
 <span class="title"><span><span>NATURA</span></span></span></a>
 </div>
                                                                                                             
 <div>
 <a href="./img/fotos/img08-2-G.jpg" data-lightbox="galeria-fotos">
-<img src="./img/fotos/img_08.jpg"/>
+<img src="./img/fotos/img8.jpg"/>
 <span class="title"><span><span>GNT</span></span></a>
 </div>
                                                                                                             
 <div>
 <a href="./img/fotos/img04-2-G.jpg" data-lightbox="galeria-fotos">
-<img  src="./img/fotos/img_04.jpg"/>
+<img  src="./img/fotos/img4.jpg"/>
 <span class="title"><span><span>MORANA</span></span></span></a>
 </div>
                                                                                                             
 <div>                                                                  
 <a href="./img/fotos/img05-2-G.jpg" data-lightbox="galeria-fotos">
-<img  src="./img/fotos/img_05.jpg"/>
+<img  src="./img/fotos/img5.jpg"/>
 <span class="title"><span><span>BIBI</span></span></span></a>
 </div>
                                                                                                             
 <div>
 <a href="./img/fotos/img09-2-G.jpg" data-lightbox="galeria-fotos">
-<img  src="./img/fotos/img_09.jpg"/>
+<img  src="./img/fotos/img9.jpg"/>
 <span class="title"><span><span>BALÉ DA CIDADE</span></span></span></a>
 </div>
 
 <div>
 <a href="./img/fotos/img03-2-G.jpg" data-lightbox="galeria-fotos">
-<img  src="./img/fotos/img_03.jpg"/>
+<img  src="./img/fotos/img3.jpg"/>
 <span class="title"><span><span>MORANA</span></span></span></a>
 </div>
 
 <div>                                              
 <a href="./img/fotos/img06-2-G.jpg" data-lightbox="galeria-fotos">
-<img  src="./img/fotos/img_06.jpg"/>
+<img  src="./img/fotos/img6.jpg"/>
 <span class="title"><span><span>BIBI</span></span></span></a>
 </div>
                                                                                                             
@@ -325,6 +363,56 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                 <!--                                                                                <a href="javascript:void(0);"><span class="arrow right"></span><img src="/--><!--templates/peugeot/images/arrow-carrousel-right.png" width="15" height="34" alt="next" /></a>-->
                                     </div>
                                                             </div>
+
+
+<div id="galeria_slider">
+<!-- data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true }' -->
+    <div class="main-carousel" >
+        <div class="carousel-cell">
+            <a href="./img/fotos/img01-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img1.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img07-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img7.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img08-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img8.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img04-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img4.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img05-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img5.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img09-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img9.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img03-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img3.jpg"/>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="./img/fotos/img06-2-G.jpg" data-lightbox="galeria-fotos">
+                <img  src="./img/fotos/img6.jpg"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
                             <!--                                                                                                                                                                                                                    <div class="meaGamme">
                                                                                                                                                                             <div class="content">
                                                                                                                                                                                             <p><a href="/" target=""></a></p>
@@ -385,12 +473,13 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                 <div class="center">
                 <div class="products detail">
  </p>  
-  </p>  
-   </p>
-     </p>
+  </a> <br class="sumir"><br class="sumir">
+
+ 
+
+    
                     
-<h2 style="margin-top: 12px;">PORTIFÓLIO VÍDEOS</h2>
-<p>Rolo dos Diretores<br><br>
+<h2 style="margin-top: 12px;">rolo dos diretores</h2><br>
 
 
 <iframe width="650" height="365" src="https://www.youtube.com/embed/g1Su8u7epec" frameborder="0" allowfullscreen></iframe>
@@ -424,12 +513,13 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                     <div class="content">
                         <div class="blockActus">
                         
-                        <br>
-<br><br>
+                        <br><br>
+
+
 
 
 <a href="./img/ConceitoLogo.jpg" data-lightbox="conceito-logo-2">
-                                            <img src= "./img/LOGO_paginas_.png"width="522" /></strong><br/>
+                      <img class="edicao_clovis"  style="" img src= "./img/LOGO_paginas_.png" /></strong><br/>
                                         </a>
                                                         
                                 <div></div>
@@ -468,8 +558,10 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                 
 
                                                                                                                                                                 <div class="products detail caras_container"><p>
-                                <h2>PROFISSIONAIS</h2>
-                                <p>Equipe MÚTUA</p>
+                                <h2 class="profissionais_h2">PROFISSIONAIS</h2><br>
+
+
+                               	
                              
     
                                                                                        
@@ -509,23 +601,23 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                                     
                                             
                                            
-                                            <div class="div_fabio col-md-3" >
-                                                <img class="caras fabio" style="max-width: 100%; height: auto" src="./img/imgFabio1.png" />
+                                            <div class="div_fabio caras_div col-md-3" >
+                                                <img class="caras fabio img_caras_" style="" src="./img/imgFabio1.png" />
                                             </div>
                                             
                                             
-                                            <div class="div_clovis col-md-3">
-                                                <img class="caras clovis" style="max-width: 100%; height: auto" src="./img/imgClovis1.png" />
+                                            <div class="div_clovis caras_div  col-md-3">
+                                                <img class="caras clovis img_caras_" style="" src="./img/imgClovis1.png" />
                                             </div>
 
-                                            <div class="div_araujo col-md-3">
-                                                <img class="caras araujo" style="max-width: 100%; height: auto" src="./img/imgAraujo1.png" />                                               
+                                            <div class="div_araujo caras_div  col-md-3">
+                                                <img class="caras araujo  img_caras_" style="" src="./img/imgAraujo1.png" />                                               
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
                                 </div> 
-                                   <br><br><br><br><br><br><br><br><br><br><br>
+                                   <br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir"><br class="sumir">
 
 <Script type="text/JavaScript">
 
@@ -533,70 +625,84 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
 
 
+
+
+
 $(".div_fabio").hover(
        function(){
-        $(".div_fabio").css("cursor", "pointer");
-        $('.fabio').transition({opacity: 0, duration: 200});
-        window.setTimeout(function(){
-            $(".fabio").css("content", "url(./img/imgFabio2.png)");
+        if (parseInt($(window).width()) > 641) {
+            $(".div_fabio").css("cursor", "pointer");
+            $('.fabio').transition({opacity: 0, duration: 200});
             window.setTimeout(function(){
-                $('.fabio').transition({opacity: 1, duration: 200});
-            }, 10)
-        }, 250)
+                $(".fabio").css("content", "url(./img/imgFabio2.png)");
+                window.setTimeout(function(){
+                    $('.fabio').transition({opacity: 1, duration: 20});
+                }, 10)
+            }, 250)
+        }
     },
     function(){
-        $('.fabio').transition({opacity: 0, duration: 200});
-        window.setTimeout(function(){
-            $(".fabio").css("content", "url(./img/imgFabio1.png)");
+        if (parseInt($(window).width()) > 641) {
+            $('.fabio').transition({opacity: 0, duration: 200});
             window.setTimeout(function(){
-                $('.fabio').transition({opacity: 1, duration: 200});
-            }, 10)
-        }, 250)
+                $(".fabio").css("content", "url(./img/imgFabio1.png)");
+                window.setTimeout(function(){
+                    $('.fabio').transition({opacity: 1, duration: 200});
+                }, 10)
+            }, 250)
+        }
     }
 );
 
 $(".div_clovis").hover(
     function(){
-        $(".div_clovis").css("cursor", "pointer");
-        $('.clovis').transition({opacity: 0, duration: 200});
-        window.setTimeout(function(){
-            $(".clovis").css("content", "url(./img/imgClovis2.png)");
+        if (parseInt($(window).width()) > 641) {
+            $(".div_clovis").css("cursor", "pointer");
+            $('.clovis').transition({opacity: 0, duration: 200});
             window.setTimeout(function(){
-                $('.clovis').transition({opacity: 1, duration: 200});
-            }, 10)
-        }, 250)
-        
+                $(".clovis").css("content", "url(./img/imgClovis2.png)");
+                window.setTimeout(function(){
+                    $('.clovis').transition({opacity: 1, duration: 200});
+                }, 10)
+            }, 250)
+        }
     },
     function(){
-        $('.clovis').transition({opacity: 0, duration: 200});
-        window.setTimeout(function(){
-            $(".clovis").css("content", "url(./img/imgClovis1.png)");
+        if (parseInt($(window).width()) > 641) {
+            $('.clovis').transition({opacity: 0, duration: 200});
             window.setTimeout(function(){
-                $('.clovis').transition({opacity: 1, duration: 200});
-            }, 10)
-        }, 250)
+                $(".clovis").css("content", "url(./img/imgClovis1.png)");
+                window.setTimeout(function(){
+                    $('.clovis').transition({opacity: 1, duration: 200});
+                }, 10)
+            }, 250)
+        }
     }
 );
 
 $(".div_araujo").hover(
     function(){
-        $(".div_araujo").css("cursor", "pointer");
-        $('.araujo').transition({opacity: 0, duration: 200});
-        window.setTimeout(function(){
-            $(".araujo").css("content", "url(./img/imgAraujo2.png)");
+        if (parseInt($(window).width()) > 641) {
+            $(".div_araujo").css("cursor", "pointer");
+            $('.araujo').transition({opacity: 0, duration: 200});
             window.setTimeout(function(){
-                $('.araujo').transition({opacity: 1, duration: 200});
-            }, 10)
-        }, 250)
+                $(".araujo").css("content", "url(./img/imgAraujo2.png)");
+                window.setTimeout(function(){
+                    $('.araujo').transition({opacity: 1, duration: 200});
+                }, 10)
+            }, 250)
+        }
     },
     function(){
-        $('.araujo').transition({opacity: 0, duration: 200});
-        window.setTimeout(function(){
-            $(".araujo").css("content", "url(./img/imgAraujo1.png)");
+        if (parseInt($(window).width()) > 641) {
+            $('.araujo').transition({opacity: 0, duration: 200});
             window.setTimeout(function(){
-                $('.araujo').transition({opacity: 1, duration: 200});
-            }, 10)
-        }, 250)
+                $(".araujo").css("content", "url(./img/imgAraujo1.png)");
+                window.setTimeout(function(){
+                    $('.araujo').transition({opacity: 1, duration: 200});
+                }, 10)
+            }, 250)
+        }
     }
 );
 
@@ -666,29 +772,29 @@ $(".div_araujo").hover(
                         <div id="footer">
                                 <div class="contentFooter">
                                         <ul class="menu_blcF">
-<li class="deeper parent"><a style="width: 100%;margin-left: 40px;" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Footer','eventAction': 'Navigation::level1','eventLabel': 'International sites'});"
-        class="puce" href="javascript:;">LOGOMARCAS Criação <img class="arrow-up-class" style="width: 25px; height: 25px; margin-bottom: -9px" src="./img/arrow-up.png"/></a><ul class="nav-child unstyled small logomarcas" style="width: 100%;">
-        <li  class="logo-1" style="">
+<li class="deeper parent"><a  onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Footer','eventAction': 'Navigation::level1','eventLabel': 'International sites'});"
+        class="puce logomarcas_criacao" href="javascript:;">LOGOMARCAS Criação <img class="arrow_up_class" style="width: 25px; height: 25px; margin-bottom: -9px" src="./img/arrow-up.png"/></a><ul class="nav-child unstyled small logomarcas" style="width: 100%;">
+        <li  class="logo_1">
             <a href="./img/logos/TecnologiaLivre.jpg" data-lightbox="galeria-logos">
                 <img  class='logo-1-img' src="./img/logos/logoP01_tecnologialivre_bot1.png">
             </a>
         </li>
-        <li  class=" logo-2" style="margin-left: 20px">
+        <li  class="logo_2" >
             <a href="./img/logos/2Benditos.jpg" data-lightbox="galeria-logos">
                 <img  class='logo-2-img' src="./img/logos/logoP02_2Benditos_bot1.png">
             </a>
         </li>
-        <li  class=" logo-3" style="margin-left: 60px">
+        <li  class="logo_3" >
             <a href="./img/logos/IleAlafia.jpg" data-lightbox="galeria-logos">
                 <img  class='logo-3-img' src="./img/logos/logoP03_IleAlafia_bot1.png">
             </a>
         </li>
-        <li  class="logo-4" style="margin-left: -20px">
+        <li  class="logo_4">
             <a href="./img/logos/Mojuba.jpg" data-lightbox="galeria-logos">
                 <img  class='logo-4-img' src="./img/logos/logoP04_Mojuba_bot1.png">
             </a>
         </li>
-        <li  class=" logo-5" style="margin-left: 35px">
+        <li  class="logo_5">
             <a href="./img/logos/Banda.jpg" data-lightbox="galeria-logos">
                 <img  class='logo-5-img' src="./img/logos/logoP05_Banda_bot1.png">
             </a>
@@ -701,12 +807,24 @@ $(".div_araujo").hover(
         </ul>
 
                                         <div class="menuRight"><ul class="blcFR ">
-    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.facebook.com/mutuafilmes'}); taggage('/clic_footer_partage-facebook');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'www.facebook.com/mutuafilmes/'}); taggage('/clic_footer_partage-facebook');" class="info" href="http://www.facebook.com/mutuafilmes/" target="_blank"><span class="big">Facebook</span></a></li>
-    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.twitter.com/mutuafilmes'}); taggage('/clic_footer_partage-twitter');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.twitter.com/mutuafimes'}); taggage('/clic_footer_partage-twitter');" class="info" href="http://www.twitter.com/mutuafilmes" target="_blank"><span class="little">Twitter</span></a></li>
-    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.youtube.com/mutuafilmes'}); taggage('/clic_footer_partage-youtube');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.youtube.com/watch?v=g1Su8u7epec&feature=youtu.be'}); taggage('/clic_footer_partage-youtube');" class="info" href="http://www.youtube.com/watch?v=g1Su8u7epec&feature=youtu.be" target="_blank"><span class="little">YouTube </span></a></li>
-    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'https://plus.google.com/+mutuafilmes'}); taggage('/clic_footer_partage-google');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'https://plus.google.com/mutuafilmes'}); taggage('/clic_footer_partage-google');" class="info" href="https://plus.google.com/mutuafilmes" rel="publisher" target="_blank"><span class="little">Google +</span></a></li>
-    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.pinterest.com/mutuafilmes'}); taggage('/clic_footer_partage-pinterest');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.pinterest.com/mutuafilmes'}); taggage('/clic_footer_partage-pinterest');" class="info" href="http://www.pinterest.com/mutuafilmes" target="_blank"><span class="little">Pinterest</span></a></li>
-    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.instagram.com/mutuafilmes'}); taggage('/clic_footer_partage-instagram');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.instagram.com/mutuafimes'}); taggage('/clic_footer_partage-instagram');" class="info" href="http://www.instagram.com/mutuafilmes" target="_blank" class="info"><span class="little">Instagram</span></a></li>
+    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.facebook.com/mutuafilmes'}); taggage('/clic_footer_partage-facebook');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'www.facebook.com/mutuafilmes/'}); taggage('/clic_footer_partage-facebook');" class="info" href="http://www.facebook.com/mutuafilmes/" target="_blank"><span class="big">Facebook</span></a>
+    </li>
+
+    <li style="display: none"><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.twitter.com/mutuafilmes'}); taggage('/clic_footer_partage-twitter');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.twitter.com/mutuafimes'}); taggage('/clic_footer_partage-twitter');" class="info" href="http://www.twitter.com/mutuafilmes" target="_blank"><span class="little">Vimeo</span></a>
+    </li>
+
+    <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.youtube.com/mutuafilmes'}); taggage('/clic_footer_partage-youtube');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.youtube.com/watch?v=g1Su8u7epec&feature=youtu.be'}); taggage('/clic_footer_partage-youtube');" class="info" href="http://www.youtube.com/watch?v=g1Su8u7epec&feature=youtu.be" target="_blank"><span class="little">YouTube </span></a>
+    </li>
+
+    <!-- <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'https://plus.google.com/+mutuafilmes'}); taggage('/clic_footer_partage-google');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'https://plus.google.com/mutuafilmes'}); taggage('/clic_footer_partage-google');" class="info" href="https://plus.google.com/mutuafilmes" rel="publisher" target="_blank"><span class="little">Google +</span></a>
+    </li> -->
+
+   <!--  <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.pinterest.com/mutuafilmes'}); taggage('/clic_footer_partage-pinterest');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.pinterest.com/mutuafilmes'}); taggage('/clic_footer_partage-pinterest');" class="info" href="http://www.pinterest.com/mutuafilmes" target="_blank"><span class="little">Pinterest</span></a>
+    </li> -->
+
+   <!--  <li><a ontouchstart="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.instagram.com/mutuafilmes'}); taggage('/clic_footer_partage-instagram');" onclick="dataLayer.push({'event': 'uaevent','eventCategory': 'Link','eventAction':'Redirection','eventLabel':'http://www.instagram.com/mutuafimes'}); taggage('/clic_footer_partage-instagram');" class="info" href="http://www.instagram.com/mutuafilmes" target="_blank" class="info"><span class="little">Instagram</span></a>
+    </li> -->
+    
 </ul>
 </div>
                                         <br class="clear"/>
@@ -725,51 +843,76 @@ $(".div_araujo").hover(
 
 <script type="text/javascript">
 
-$(window).click(function(e) {
-    $("#navMenu3").fadeOut("fast");
-    $("#navMenu2").fadeOut("fast");
-    $(".second").removeClass("hovered");
-    $(".second-fazemos").removeClass("hovered");
-});
+    $(window).click(function(e) { 
+        $(".barra_360").fadeOut("fast");
+        $("#navMenu3").fadeOut("fast");
+        $("#navMenu2").fadeOut("fast");
+        $(".second").removeClass("hovered");
+        $(".second-fazemos").removeClass("hovered");
+    });
 
-$(document).ready(function(){
-    var imagem1 = new Image();
-    imagem1.src = "./img/logos/logoP01_tecnologialivre.png"
-    var imagem2 = new Image();
-    imagem2.src = "./img/logos/logoP02_2Benditos.png"
-    var imagem3 = new Image();
-    imagem3.src = "./img/logos/logoP03_IleAlafia.png"
-    var imagem4 = new Image();
-    imagem4.src = "./img/logos/logoP04_Mojuba.png"
-    var imagem5 = new Image();
-    imagem5.src = "./img/logos/logoP05_Banda.png"
-    console.log("rodeo"+imagem1)
-});
+    $('#menu_top_sumir').click(function(){
+        $('#icone_menu').toggleClass('open');
+        $('#menu').toggleClass('active');
+    });
+
+    $('#menu_fotos_sumir').click(function(){
+        $('#icone_menu').toggleClass('open');
+        $('#menu').toggleClass('active');
+    });
+
+    $('#menu_videos_sumir').click(function(){
+        $('#icone_menu').toggleClass('open');
+        $('#menu').toggleClass('active');
+    });
+
+    $('#menu_equipe_sumir').click(function(){
+        $('#icone_menu').toggleClass('open');
+        $('#menu').toggleClass('active');
+    });
+
+    $(document).ready(function(){
+
+        if (parseInt($(window).width()) < 641) {
+           $('.fabio').click(function(){
+             window.location = "#modal_fabio"
+           })
+
+           $('.clovis').click(function(){
+             window.location = "#modal_clovis"
+           })
+
+           $('.araujo').click(function(){
+             window.location = "#modal_araujo"
+           })
+
+           $('.slideNavRight').css('display', 'none');
+        }
+
+        $('.main-carousel').flickity();
+
+        $(window).resize();
+
+        
+        
+
+        var imagem1 = new Image();
+        imagem1.src = "./img/logos/logoP01_tecnologialivre.png";
+        var imagem2 = new Image();
+        imagem2.src = "./img/logos/logoP02_2Benditos.png";
+        var imagem3 = new Image();
+        imagem3.src = "./img/logos/logoP03_IleAlafia.png";
+        var imagem4 = new Image();
+        imagem4.src = "./img/logos/logoP04_Mojuba.png";
+        var imagem5 = new Image();
+        imagem5.src = "./img/logos/logoP05_Banda.png";
+    });
 
 
-$(".puce").click(function(){
-    var transform = $('.arrow-up-class').css( "transform")
-    // if (transform === 'matrix(1, 0, 0, 1, 0, 0)') {
-    //     $('.arrow-up-class').css( "transform", 'rotate(0deg)')
-    // } else {
-    //     $('.arrow-up-class').css( "transform", 'rotate(180deg)')
-    // }
-    if (transform == 'none') {
-        $('.arrow-up-class').css( "transform", 'rotate(+180deg)')
-    }
-    
-    if (transform == 'matrix(1, 0, 0, 1, 0, 0)') {
-        $('.arrow-up-class').css( "transform", 'rotate(+180deg)')
-    }
 
-    if (transform == 'matrix(-1, 1.22465e-16, -1.22465e-16, -1, 0, 0)') {
-        $('.arrow-up-class').css( "transform", 'rotate(0deg)')
-    }
-
-    console.log(transform)
-
-})
-
+    // $('body').on("click", ".puce", function(){
+    //     $('.arrow_up_class').toggleClass("girar");
+    // })
 
 
 
@@ -820,6 +963,103 @@ $(".puce").click(function(){
     )
 
 </script>
+
+
+<div id="modal">
+  <div class="modal-content">
+    <div class="header">
+      <h2>360&deg;VR</h2>
+    </div>
+    <div class="copy">
+    <br>
+      <p style="font-size: 1em; padding: 5px; text-align: center; color: #000">Entre em contato para se informar sobre a plataforma 360&deg;VR <br><br> <a  href="mailto:contato@mutuafilmes.com.br">contato@mutuafilmes.com.br</a><br><br>ou pelo telefone:<br> 55 11 993188568 / Fabio Burtin.</p><br>
+      <a class="sair" href="#">Fechar</a><br> </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+
+<div id="modal_quem">
+  <div class="modal-content">
+    <div class="header">
+      <h2>Quem somos?</h2>
+    </div>
+    <div class="copy">
+    <br>
+      <p style="font-size: 1em; padding: 5px; text-align: center; color: #000">3 Profissionais, 3 artistas,<br>3 histórias de vida que se encontram para somar memórias (de elefante) que traduz a força  da luta pela sobrevivência  por meio da arte sensível. Histórias essas que se cruzaram recentemente pela amizade e objetivos comuns.</p><br>
+      <a class="sair" href="#">Fechar</a><br> </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+ 
+ <div id="modal_oque">
+  <div class="modal-content">
+    <div class="header">
+      <h2>Quem somos?</h2>
+    </div>
+    <div class="copy">
+    <br>
+      <p style="font-size: 1em; padding: 5px; text-align: center; color: #000">O que for preciso e impreciso para criar, compor e transmitir a ideia dos clientes dentro da expectativa Mútua, valorizando sempre a interlocução entre produto, cliente e público.</p><br>
+      <a class="sair" href="#">Fechar</a><br> </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+
+<div id="modal_fabio">
+  <div class="modal-content">
+    <div class="header">
+      <h2>FABIO BURTIN</h2>
+    </div>
+    <div class="copy">
+    <br>
+      <p style="font-size: 1em; padding: 5px; text-align: center; color: #000">
+          <strong>Diretor Geral</strong><br><br>
+          <a  href="mailto:fabioburtin@mutuafilmes.com.br">fabioburtin@mutuafilmes.com.br</a><br><br>
+
+      </p><br>
+      <a class="sair" href="#">Fechar</a><br> </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+<div id="modal_clovis">
+  <div class="modal-content">
+    <div class="header">
+      <h2>CLÓVIS GHIORZI</h2>
+    </div>
+    <div class="copy">
+    <br>
+      <p style="font-size: 1em; padding: 5px; text-align: center; color: #000">
+          <strong>Diretor de Fotografia</strong><br><br>
+          <a  href="mailto:clovisgr@mutuafilmes.com.br">clovisgr@mutuafilmes.com.br</a><br><br>
+
+      </p><br>
+      <a class="sair" href="#">Fechar</a><br> </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+
+<div id="modal_araujo">
+  <div class="modal-content">
+    <div class="header">
+      <h2>C. ARAÚJO</h2>
+    </div>
+    <div class="copy">
+    <br>
+      <p style="font-size: 1em; padding: 5px; text-align: center; color: #000">
+          <strong>Diretor Artístico</strong><br><br>
+          <a  href="mailto:caraujo@mutuafilmes.com.br">caraujo@mutuafilmes.com.br</a><br><br>
+
+      </p><br>
+      <a class="sair" href="#">Fechar</a><br> </div>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+
 
 
 </body>

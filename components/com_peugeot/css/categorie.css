@@ -34,7 +34,7 @@ ul a .masque{font-family:"PeugeotBold";color:#777777;text-transform:none;padding
 html{overflow-y:hidden;}
 .prod{background:#373533;height:100%; }
 #globalProduits{color:#ffffff;position:absolute;top:0; left:0; right:0;overflow: hidden; display: block;}
-.catProducts{text-align:center;padding:29% 0;}
+.catProducts{text-align:center;padding:29% 0; }
 
 .menuCat{margin:22% 0;height:157px; width:100%;position:absolute;top:0; left:0;z-index:5; background: rgba(0,0,0,.8); border: 2px solid rgba(255,255,255,.4); border-width: 2px 0;}
 #globalProduits h1{font-family:"PeugeotLight";font-size:48px;color:#ffffff;padding:20px 0 5px 0;font-weight:normal;}

@@ -34,8 +34,8 @@ embed,object {outline: 0;overflow: hidden}
 img[align="left"], img.pull-left { float: left; margin:0 20px 10px 0;}
 img[align="right"], img.pull-right { float: right; margin:0 0 10px 20px;}
 
-.sloganlogo{float:left;}
-.sloganlogo.texte{padding:30px 0 0 30px;}
+/*.sloganlogo{float:left;}*/
+/*.sloganlogo.texte{padding:30px 0 0 30px;}*/
 #breadcrumb {top:101%;/*left:-64px;*/height:24px;overflow:hidden;position:absolute;z-index: 9;
 width: 100%;clear: both;}
 /*.cookiebanner #breadcrumb{top: 25px;}*/
